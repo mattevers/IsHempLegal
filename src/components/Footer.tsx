@@ -130,10 +130,23 @@ export function Footer() {
             &copy; {new Date().getFullYear()} IsHempLegal.com. All rights
             reserved.
           </p>
+          <div className="flex items-center gap-4 text-xs">
+            <Link
+              href="/privacy"
+              className="text-gray-600 hover:text-gray-400 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="text-gray-600 hover:text-gray-400 transition-colors"
+            >
+              Terms of Service
+            </Link>
+          </div>
           <p className="text-gray-600 text-xs text-center md:text-right max-w-lg">
-            This site provides informational guidance only, not legal advice.
-            Laws change frequently — always verify with local authorities. Not a
-            substitute for an attorney.
+            Not legal advice. Laws change frequently — verify with local
+            authorities.
           </p>
         </div>
       </div>

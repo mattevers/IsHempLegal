@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllStates } from "@/data/states";
 import { StatusBadge } from "@/components/StatusBadge";
+import { MapExplorer } from "@/components/MapExplorer";
 
 export const metadata: Metadata = {
   title: "Hemp Laws by State — Delta-8, CBD & THCA Legal Status All 50 States",
@@ -21,6 +22,13 @@ export default function AllStatesPage() {
         Legal status of Delta-8, CBD, and hemp compounds across all 50 states.
       </p>
 
+      {/* Interactive Map */}
+      <section className="mb-12">
+        <MapExplorer />
+      </section>
+
+      {/* State Grid */}
+      <h2 className="text-2xl font-bold text-white mb-4">All 50 States</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {states.map((state) => (
           <a

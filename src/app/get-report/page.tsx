@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllStates } from "@/data/states";
 import { CheckCircle } from "lucide-react";
+import { ReportPurchaseCard } from "@/components/ReportPurchaseCard";
 
 export const metadata: Metadata = {
   title: "Hemp Compliance Report — Full State Legal Analysis",
@@ -55,51 +56,9 @@ export default function GetReportPage() {
         </div>
 
         {/* Purchase Card */}
-        <div className="rounded-2xl border border-brand-border bg-brand-card p-8">
-          <div className="text-center mb-6">
-            <p className="text-gray-400 text-sm mb-1">One-time purchase</p>
-            <p className="text-5xl font-black text-white">
-              $7<span className="text-2xl">.99</span>
-            </p>
-            <p className="text-gray-500 text-sm mt-2">
-              Instant PDF download
-            </p>
-          </div>
-
-          <form className="space-y-4">
-            <div>
-              <label
-                htmlFor="report-state"
-                className="block text-gray-400 text-sm mb-1.5"
-              >
-                Select your state
-              </label>
-              <select
-                id="report-state"
-                className="w-full rounded-xl border border-brand-border bg-brand-dark px-4 py-3 text-white text-base focus:outline-none focus:ring-2 focus:ring-brand-green appearance-none cursor-pointer"
-              >
-                <option value="">Choose a state...</option>
-                {states.map((s) => (
-                  <option key={s.slug} value={s.slug}>
-                    {s.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Stripe payment button — replace href with actual Stripe link */}
-            <a
-              href="#"
-              className="block w-full rounded-xl bg-brand-orange hover:bg-orange-500 text-white font-bold text-lg py-4 text-center transition-colors"
-            >
-              Purchase Report &rarr;
-            </a>
-
-            <p className="text-center text-gray-600 text-xs">
-              Secure payment via Stripe. Report delivered instantly as PDF.
-            </p>
-          </form>
-        </div>
+        <ReportPurchaseCard
+          states={states.map((s) => ({ slug: s.slug, name: s.name }))}
+        />
       </div>
 
       {/* Who It's For */}

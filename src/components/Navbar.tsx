@@ -38,12 +38,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/get-report"
-            className="rounded-lg bg-brand-orange hover:bg-orange-500 text-white font-semibold px-4 py-1.5 transition-colors"
-          >
-            Get Report
-          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -71,13 +65,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/get-report"
-            onClick={() => setOpen(false)}
-            className="block mt-2 rounded-lg bg-brand-orange hover:bg-orange-500 text-white font-semibold px-4 py-2.5 text-sm text-center transition-colors"
-          >
-            Get Report
-          </Link>
         </div>
       )}
     </nav>

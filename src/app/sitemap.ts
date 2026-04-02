@@ -48,11 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.95,
     },
-    {
-      url: "https://ishemplegal.com/get-report",
-      lastModified: new Date(),
-      priority: 0.6,
-    },
     ...stateUrls,
     ...compoundUrls,
     ...comparePairs,

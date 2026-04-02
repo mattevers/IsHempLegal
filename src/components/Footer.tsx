@@ -38,14 +38,6 @@ export function Footer() {
                   All States
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/get-report"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Compliance Report
-                </Link>
-              </li>
             </ul>
           </div>
 

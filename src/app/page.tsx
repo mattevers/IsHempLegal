@@ -1,65 +1,108 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import { LookupTool } from "@/components/LookupTool";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Is Hemp Legal In My State? Delta-8, CBD & THCA Laws by State",
+  description:
+    "Instantly check if Delta-8, CBD, THCA, HHC, and other hemp products are legal in your state. Free, accurate, updated for 2026 federal changes.",
+  openGraph: {
+    title: "Is Hemp Legal In My State?",
+    description:
+      "Free tool to check hemp and Delta-8 legality in all 50 states.",
+    url: "https://ishemplegal.com",
+  },
+  alternates: { canonical: "https://ishemplegal.com" },
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      {/* Hero */}
+      <section className="py-20 px-4 text-center">
+        <div className="inline-flex items-center gap-2 rounded-full bg-orange-900/30 border border-orange-800/40 px-4 py-1.5 text-orange-400 text-sm font-medium mb-6">
+          Federal hemp laws changing November 12, 2026
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <h1 className="text-4xl md:text-6xl font-black text-white mb-4">
+          Is Hemp Legal in
+          <br />
+          Your State?
+        </h1>
+        <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-xl mx-auto">
+          Check Delta-8, CBD, THCA, HHC, and more across all 50 states. Free.
+          Instant. Updated for 2026.
+        </p>
+        <LookupTool />
+      </section>
+
+      {/* Federal Ban Banner */}
+      <section className="max-w-4xl mx-auto px-4 mb-16">
+        <div className="rounded-2xl bg-orange-900/20 border border-orange-700/40 p-6 md:p-8">
+          <div className="flex flex-col md:flex-row md:items-center gap-4">
+            <div className="flex-1">
+              <h2 className="text-orange-400 font-bold text-xl mb-2">
+                Federal Hemp Law Changes November 12, 2026
+              </h2>
+              <p className="text-orange-300/80">
+                Congress redefined hemp to include THCA and Delta-8 as
+                controlled substances. Most intoxicating hemp products will be
+                federally banned. Laws vary by state.
+              </p>
+            </div>
+            <a
+              href="/2026-federal-ban"
+              className="shrink-0 rounded-xl bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 text-center transition-colors"
+            >
+              What&apos;s Changing &rarr;
+            </a>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="max-w-4xl mx-auto px-4 mb-16">
+        <h2 className="text-2xl font-bold text-white text-center mb-8">
+          How It Works
+        </h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              step: "1",
+              title: "Select your state",
+              desc: "Choose from all 50 US states.",
+            },
+            {
+              step: "2",
+              title: "Pick your compound",
+              desc: "Delta-8, CBD, THCA, HHC, and more.",
+            },
+            {
+              step: "3",
+              title: "Get instant results",
+              desc: "Clear legal status with source citations.",
+            },
+          ].map((item) => (
+            <div
+              key={item.step}
+              className="rounded-2xl border border-brand-border bg-brand-card p-6 text-center"
+            >
+              <div className="w-10 h-10 rounded-full bg-brand-green/20 text-green-400 font-black text-lg flex items-center justify-center mx-auto mb-3">
+                {item.step}
+              </div>
+              <h3 className="text-white font-bold mb-2">{item.title}</h3>
+              <p className="text-gray-400 text-sm">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <p className="text-center text-gray-600 text-xs">
+          This tool provides informational guidance only, not legal advice. Laws
+          change frequently — always verify with local authorities. Not a
+          substitute for an attorney.
+        </p>
+      </section>
+    </main>
   );
 }

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { Logo } from "./Logo";
 
 const links = [
   { href: "/states", label: "All States" },
@@ -20,8 +21,8 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-brand-border bg-brand-dark/95 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link href="/" className="text-white font-bold text-lg">
-          Is Hemp Legal?
+        <Link href="/">
+          <Logo />
         </Link>
 
         {/* Desktop */}

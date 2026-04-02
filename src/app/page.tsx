@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LookupTool } from "@/components/LookupTool";
+import { LogoIcon } from "@/components/Logo";
 
 export const metadata: Metadata = {
   title: "Is Hemp Legal In My State? Delta-8, CBD & THCA Laws by State",
@@ -22,10 +23,14 @@ export default function HomePage() {
         <div className="inline-flex items-center gap-2 rounded-full bg-orange-900/30 border border-orange-800/40 px-4 py-1.5 text-orange-400 text-sm font-medium mb-6">
           Federal hemp laws changing November 12, 2026
         </div>
-        <h1 className="text-4xl md:text-6xl font-black text-white mb-4">
-          Is Hemp Legal in
+        <LogoIcon size="lg" className="mx-auto mb-6" />
+        <h1 className="font-logo text-5xl md:text-7xl tracking-wide text-white mb-4 uppercase">
+          Is Hemp{" "}
+          <span className="bg-gradient-to-r from-green-500 via-emerald-400 to-green-300 bg-clip-text text-transparent">
+            Legal
+          </span>
           <br />
-          Your State?
+          in Your State?
         </h1>
         <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-xl mx-auto">
           Check Delta-8, CBD, THCA, HHC, and more across all 50 states. Free.

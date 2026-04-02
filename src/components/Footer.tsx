@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LogoIcon, LogoText } from "./Logo";
 
 export function Footer() {
   return (
@@ -7,8 +8,9 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="text-white font-bold text-lg">
-              Is Hemp Legal?
+            <Link href="/" className="inline-flex items-center gap-2">
+              <LogoIcon size="sm" className="opacity-60" />
+              <LogoText className="text-lg" />
             </Link>
             <p className="text-gray-500 text-sm mt-2 leading-relaxed">
               Free hemp law checker for all 50 US states. Updated for the 2026

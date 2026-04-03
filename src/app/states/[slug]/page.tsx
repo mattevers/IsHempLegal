@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { getStateBySlug, getAllStates } from "@/data/states";
 import { StatusBadge } from "@/components/StatusBadge";
 import { ResultCard } from "@/components/ResultCard";
+import { ExternalLink } from "lucide-react";
+import { AFFILIATES } from "@/data/affiliates";
 import {
   COMPOUND_LABELS,
   PRODUCT_LABELS,
@@ -124,6 +126,7 @@ export default async function StatePage({
               compoundLabel={
                 COMPOUND_LABELS[highlightedCompound as Compound]
               }
+              compoundKey={highlightedCompound}
               stateName={state.name}
               compoundStatus={
                 state.compounds[highlightedCompound as Compound]
@@ -198,6 +201,41 @@ export default async function StatePage({
           ))}
         </div>
       </section>
+
+      {/* Where to Buy */}
+      {AFFILIATES.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-bold text-white mb-4">
+            Where to Buy Hemp Products in {state.name}
+          </h2>
+          <div className="grid gap-3">
+            {AFFILIATES.map((a) => (
+              <a
+                key={a.name}
+                href={a.url}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="rounded-xl border border-brand-border bg-brand-card p-5 flex items-center justify-between gap-4 hover:border-green-700/60 transition-colors group"
+              >
+                <div>
+                  <p className="text-white font-bold group-hover:text-green-400 transition-colors">
+                    {a.name}
+                  </p>
+                  <p className="text-gray-400 text-sm mt-1">{a.description}</p>
+                </div>
+                <span className="shrink-0 rounded-lg bg-green-600 group-hover:bg-green-500 text-white font-semibold text-sm px-4 py-2 transition-colors inline-flex items-center gap-1.5">
+                  Shop Now
+                  <ExternalLink size={14} />
+                </span>
+              </a>
+            ))}
+          </div>
+          <p className="text-gray-600 text-xs mt-3">
+            We may earn a commission when you purchase through our links. This
+            helps support the site at no extra cost to you.
+          </p>
+        </section>
+      )}
 
       {/* Shipping & Age */}
       <section className="mb-10 grid md:grid-cols-3 gap-4">

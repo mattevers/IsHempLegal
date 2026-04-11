@@ -73,7 +73,7 @@ export async function generateMetadata({
     title: `Is ${label} Legal? State-by-State Guide (2026)`,
     description: `Check where ${label} is legal, restricted, or banned across all 50 US states. Updated for 2026 federal hemp law changes.`,
     alternates: {
-      canonical: `https://ishemplegal.com/compounds/${compoundSlug}`,
+      canonical: `https://www.ishemplegal.com/compounds/${compoundSlug}`,
     },
   };
 }

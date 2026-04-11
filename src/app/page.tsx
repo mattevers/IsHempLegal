@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     title: "Is Hemp Legal In My State?",
     description:
       "Free tool to check hemp and Delta-8 legality in all 50 states.",
-    url: "https://ishemplegal.com",
+    url: "https://www.ishemplegal.com",
   },
-  alternates: { canonical: "https://ishemplegal.com" },
+  alternates: { canonical: "https://www.ishemplegal.com" },
 };
 
 export default function HomePage() {

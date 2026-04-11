@@ -29,7 +29,7 @@ export async function generateMetadata({
     title: `Hemp Laws: ${s1.name} vs ${s2.name} — Delta-8, CBD & THCA Comparison`,
     description: `Compare hemp and Delta-8 laws between ${s1.name} and ${s2.name}. See side-by-side legal status for all compounds.`,
     alternates: {
-      canonical: `https://ishemplegal.com/compare/${pair}`,
+      canonical: `https://www.ishemplegal.com/compare/${pair}`,
     },
   };
 }

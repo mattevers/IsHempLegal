@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const compoundSlugs = Object.keys(COMPOUND_SLUGS);
 
   const stateUrls = states.map((s) => ({
-    url: `https://ishemplegal.com/states/${s.slug}`,
+    url: `https://www.ishemplegal.com/states/${s.slug}`,
     lastModified: new Date(s.lastUpdated),
     changeFrequency: "weekly" as const,
     priority: 0.8,
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (let i = 0; i < states.length; i++) {
     for (let j = i + 1; j < states.length; j++) {
       comparePairs.push({
-        url: `https://ishemplegal.com/compare/${states[i].slug}-vs-${states[j].slug}`,
+        url: `https://www.ishemplegal.com/compare/${states[i].slug}-vs-${states[j].slug}`,
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
         priority: 0.5,
@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   const compoundUrls = compoundSlugs.map((c) => ({
-    url: `https://ishemplegal.com/compounds/${c}`,
+    url: `https://www.ishemplegal.com/compounds/${c}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.7,
@@ -34,17 +34,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: "https://ishemplegal.com",
+      url: "https://www.ishemplegal.com",
       lastModified: new Date(),
       priority: 1.0,
     },
     {
-      url: "https://ishemplegal.com/states",
+      url: "https://www.ishemplegal.com/states",
       lastModified: new Date(),
       priority: 0.9,
     },
     {
-      url: "https://ishemplegal.com/2026-federal-ban",
+      url: "https://www.ishemplegal.com/2026-federal-ban",
       lastModified: new Date(),
       priority: 0.95,
     },

@@ -28,7 +28,7 @@ export async function generateMetadata({
     title: `Hemp Laws in ${state.name} — Delta-8, CBD & THCA Legal Status 2026`,
     description: `Is Delta-8 legal in ${state.name}? Check the current legal status of CBD, THCA, HHC, and all hemp compounds. Updated for 2026 federal changes.`,
     alternates: {
-      canonical: `https://ishemplegal.com/states/${state.slug}`,
+      canonical: `https://www.ishemplegal.com/states/${state.slug}`,
     },
   };
 }

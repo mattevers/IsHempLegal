@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Privacy policy for IsHempLegal.com — how we collect, use, and protect your information.",
-  alternates: { canonical: "https://ishemplegal.com/privacy" },
+  alternates: { canonical: "https://www.ishemplegal.com/privacy" },
 };
 
 export default function PrivacyPage() {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             IsHempLegal.com (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
             &ldquo;our&rdquo;) is an informational website that provides
             hemp and cannabinoid legal status information across the United
-            States. Our website is located at https://ishemplegal.com.
+            States. Our website is located at https://www.ishemplegal.com.
           </p>
         </section>
 

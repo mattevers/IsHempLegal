@@ -7,12 +7,12 @@ export const metadata: Metadata = {
     "2026 Federal Hemp Ban — What's Changing for Delta-8, THCA & Hemp Products",
   description:
     "The November 12, 2026 federal hemp law redefines Delta-8, THCA, and other hemp cannabinoids as controlled substances. Learn what's changing, which products are affected, and how your state is impacted.",
-  alternates: { canonical: "https://ishemplegal.com/2026-federal-ban" },
+  alternates: { canonical: "https://www.ishemplegal.com/2026-federal-ban" },
   openGraph: {
     title: "2026 Federal Hemp Ban — Everything You Need to Know",
     description:
       "New federal law bans Delta-8, THCA, and most intoxicating hemp products starting November 12, 2026.",
-    url: "https://ishemplegal.com/2026-federal-ban",
+    url: "https://www.ishemplegal.com/2026-federal-ban",
   },
 };
 

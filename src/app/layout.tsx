@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   description:
     "Instantly check if Delta-8, CBD, THCA, HHC, and other hemp products are legal in your state. Free, accurate, updated for 2026 federal changes.",
-  metadataBase: new URL("https://ishemplegal.com"),
+  metadataBase: new URL("https://www.ishemplegal.com"),
   openGraph: {
     siteName: "Is Hemp Legal?",
     type: "website",
@@ -41,12 +41,12 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Is Hemp Legal?",
-  url: "https://ishemplegal.com",
+  url: "https://www.ishemplegal.com",
   description:
     "Hemp and Delta-8 legality checker for all 50 US states.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://ishemplegal.com/states/{search_term_string}",
+    target: "https://www.ishemplegal.com/states/{search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };

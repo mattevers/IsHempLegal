@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Hemp Laws by State — Delta-8, CBD & THCA Legal Status All 50 States",
   description:
     "See the legal status of Delta-8, CBD, THCA, and other hemp compounds in all 50 US states. Updated for the 2026 federal hemp law changes.",
-  alternates: { canonical: "https://ishemplegal.com/states" },
+  alternates: { canonical: "https://www.ishemplegal.com/states" },
 };
 
 export default function AllStatesPage() {

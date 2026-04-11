@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Terms of service for IsHempLegal.com — rules and disclaimers for using our hemp law information tool.",
-  alternates: { canonical: "https://ishemplegal.com/terms" },
+  alternates: { canonical: "https://www.ishemplegal.com/terms" },
 };
 
 export default function TermsPage() {

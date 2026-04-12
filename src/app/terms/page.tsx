@@ -73,55 +73,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-lg font-bold text-white mb-2">
-            4. Compliance Reports
-          </h2>
-          <p>
-            Paid compliance reports are generated from our database at the time
-            of purchase. Reports are delivered as downloadable PDF files.
-          </p>
-          <ul className="list-disc list-inside space-y-1 mt-2">
-            <li>
-              Reports are non-refundable once the PDF has been generated and
-              downloaded.
-            </li>
-            <li>
-              Reports reflect the data in our system at the time of generation
-              and are not automatically updated if laws change.
-            </li>
-            <li>
-              Reports are for informational purposes only and do not constitute
-              legal compliance certification.
-            </li>
-            <li>
-              You may share reports within your organization but may not resell
-              or redistribute them commercially.
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-bold text-white mb-2">
-            5. Payments
-          </h2>
-          <p>
-            All payments are processed securely through Stripe. By making a
-            purchase, you agree to Stripe&apos;s{" "}
-            <a
-              href="https://stripe.com/legal"
-              className="text-green-400 hover:text-green-300 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              terms of service
-            </a>
-            . Prices are in US dollars. We reserve the right to change pricing at
-            any time without notice.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-bold text-white mb-2">
-            6. Affiliate Links
+            4. Affiliate Links
           </h2>
           <p>
             This Site may contain affiliate links to third-party retailers. If
@@ -135,7 +87,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-lg font-bold text-white mb-2">
-            7. Intellectual Property
+            5. Intellectual Property
           </h2>
           <p>
             All content on this Site — including text, graphics, logos, icons, and
@@ -148,7 +100,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-lg font-bold text-white mb-2">
-            8. Limitation of Liability
+            6. Limitation of Liability
           </h2>
           <p>
             To the fullest extent permitted by law, IsHempLegal.com and its
@@ -162,7 +114,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-lg font-bold text-white mb-2">
-            9. Indemnification
+            7. Indemnification
           </h2>
           <p>
             You agree to indemnify and hold harmless IsHempLegal.com, its
@@ -174,7 +126,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-lg font-bold text-white mb-2">
-            10. Changes to Terms
+            8. Changes to Terms
           </h2>
           <p>
             We may update these Terms of Service at any time. Changes take effect
@@ -186,7 +138,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-lg font-bold text-white mb-2">
-            11. Governing Law
+            9. Governing Law
           </h2>
           <p>
             These Terms of Service are governed by the laws of the United States.
@@ -198,7 +150,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-lg font-bold text-white mb-2">
-            12. Contact Us
+            10. Contact Us
           </h2>
           <p>
             If you have questions about these terms, contact us at{" "}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { LookupTool } from "@/components/LookupTool";
 import { LogoIcon } from "@/components/Logo";
+import { getAllStates } from "@/data/states";
+import { getAllBlogPosts } from "@/data/blog";
 
 export const metadata: Metadata = {
   title: "Is Hemp Legal In My State? Delta-8, CBD & THCA Laws by State",
@@ -16,6 +18,12 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const states = getAllStates();
+  const popularStates = states.filter((s) =>
+    ["texas", "florida", "california", "new-york", "georgia", "ohio", "illinois", "north-carolina"].includes(s.slug)
+  );
+  const blogPosts = getAllBlogPosts().slice(0, 3);
+
   return (
     <main>
       {/* Hero */}
@@ -99,6 +107,116 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Popular States */}
+      <section className="max-w-4xl mx-auto px-4 mb-16">
+        <h2 className="text-2xl font-bold text-white text-center mb-2">
+          Popular States
+        </h2>
+        <p className="text-gray-400 text-center text-sm mb-6">
+          Quick links to the most-searched hemp law states.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {popularStates.map((state) => (
+            <a
+              key={state.slug}
+              href={`/states/${state.slug}`}
+              className="rounded-xl border border-brand-border bg-brand-card p-4 text-center hover:border-brand-green/50 transition-colors group"
+            >
+              <p className="text-white font-bold group-hover:text-green-400 transition-colors">
+                {state.name}
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                {state.abbreviation}
+              </p>
+            </a>
+          ))}
+        </div>
+        <div className="text-center mt-4">
+          <a
+            href="/states"
+            className="text-green-400 hover:text-green-300 text-sm font-medium"
+          >
+            View all 50 states &rarr;
+          </a>
+        </div>
+      </section>
+
+      {/* Browse by Compound */}
+      <section className="max-w-4xl mx-auto px-4 mb-16">
+        <h2 className="text-2xl font-bold text-white text-center mb-2">
+          Browse by Compound
+        </h2>
+        <p className="text-gray-400 text-center text-sm mb-6">
+          See which states allow each hemp compound.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[
+            { slug: "delta-8", label: "Delta-8 THC" },
+            { slug: "cbd", label: "CBD" },
+            { slug: "thca", label: "THCA" },
+            { slug: "delta-9", label: "Delta-9 (Hemp)" },
+            { slug: "hhc", label: "HHC" },
+            { slug: "delta-10", label: "Delta-10 THC" },
+            { slug: "thc-o", label: "THC-O" },
+            { slug: "thcp", label: "THCP" },
+          ].map((c) => (
+            <a
+              key={c.slug}
+              href={`/compounds/${c.slug}`}
+              className="rounded-xl border border-brand-border bg-brand-card p-4 text-center hover:border-brand-green/50 transition-colors group"
+            >
+              <p className="text-white font-semibold group-hover:text-green-400 transition-colors text-sm">
+                {c.label}
+              </p>
+            </a>
+          ))}
+        </div>
+        <div className="text-center mt-4">
+          <a
+            href="/compounds"
+            className="text-green-400 hover:text-green-300 text-sm font-medium"
+          >
+            All compounds guide &rarr;
+          </a>
+        </div>
+      </section>
+
+      {/* Latest Guides */}
+      {blogPosts.length > 0 && (
+        <section className="max-w-4xl mx-auto px-4 mb-16">
+          <h2 className="text-2xl font-bold text-white text-center mb-2">
+            Latest Guides
+          </h2>
+          <p className="text-gray-400 text-center text-sm mb-6">
+            Expert guides on hemp laws, compounds, and the 2026 federal changes.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4">
+            {blogPosts.map((post) => (
+              <a
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="rounded-2xl border border-brand-border bg-brand-card p-5 hover:border-brand-green/50 transition-colors group"
+              >
+                <span className="rounded-full bg-green-900/30 border border-green-800/40 px-2 py-0.5 text-green-400 text-xs font-medium capitalize">
+                  {post.category}
+                </span>
+                <h3 className="text-white font-bold text-sm mt-2 group-hover:text-green-400 transition-colors leading-snug">
+                  {post.title}
+                </h3>
+              </a>
+            ))}
+          </div>
+          <div className="text-center mt-4">
+            <a
+              href="/blog"
+              className="text-green-400 hover:text-green-300 text-sm font-medium"
+            >
+              All guides &rarr;
+            </a>
+          </div>
+        </section>
+      )}
 
       {/* Disclaimer */}
       <section className="max-w-4xl mx-auto px-4 pb-16">

@@ -79,6 +79,22 @@ export function Footer() {
                   HHC
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/compounds/delta-9"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Delta-9 (Hemp)
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/compounds"
+                  className="text-green-400 hover:text-green-300 transition-colors"
+                >
+                  All Compounds &rarr;
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -98,18 +114,26 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/compounds/delta-9"
+                  href="/blog"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Delta-9 (Hemp)
+                  Guides & Articles
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/compounds/thc-o"
+                  href="/blog/is-delta-8-legal"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  THC-O
+                  Is Delta-8 Legal?
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog/thca-loophole-explained"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  THCA Loophole
                 </Link>
               </li>
             </ul>

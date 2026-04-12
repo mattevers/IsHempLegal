@@ -33,11 +33,10 @@ export default function PrivacyPage() {
             2. Information We Collect
           </h2>
           <p>
-            <strong className="text-white">Information you provide:</strong> When
-            you purchase a compliance report, we collect payment information
-            through our payment processor, Stripe. We do not store your credit
-            card number, CVV, or full payment details on our servers. We receive
-            your email address and the state you selected for the report.
+            <strong className="text-white">Information you provide:</strong> We
+            do not require you to create an account or provide personal
+            information to use our hemp law checker tool. If you contact us
+            via email, we receive the information you choose to share.
           </p>
           <p className="mt-3">
             <strong className="text-white">
@@ -63,7 +62,6 @@ export default function PrivacyPage() {
             3. How We Use Your Information
           </h2>
           <ul className="list-disc list-inside space-y-1">
-            <li>To process your compliance report purchase and deliver the PDF</li>
             <li>To improve our website and user experience</li>
             <li>To analyze site traffic and usage patterns</li>
             <li>To respond to inquiries or support requests</li>
@@ -81,18 +79,6 @@ export default function PrivacyPage() {
           </h2>
           <p>We use the following third-party services:</p>
           <ul className="list-disc list-inside space-y-1 mt-2">
-            <li>
-              <strong className="text-white">Stripe</strong> — payment
-              processing. Stripe&apos;s privacy policy:{" "}
-              <a
-                href="https://stripe.com/privacy"
-                className="text-green-400 hover:text-green-300 underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                stripe.com/privacy
-              </a>
-            </li>
             <li>
               <strong className="text-white">Google Analytics</strong> — website
               analytics. Google&apos;s privacy policy:{" "}
@@ -126,10 +112,8 @@ export default function PrivacyPage() {
           </h2>
           <p>
             Analytics data is retained according to Google Analytics&apos;
-            default retention settings. Payment records are retained by Stripe
-            per their data retention policies and as required for tax and legal
-            purposes. We do not maintain a user database or accounts on our
-            servers.
+            default retention settings. We do not maintain a user database or
+            accounts on our servers.
           </p>
         </section>
 

@@ -7,7 +7,8 @@ import { Logo } from "./Logo";
 
 const links = [
   { href: "/states", label: "All States" },
-  { href: "/compounds/delta-8", label: "Delta-8" },
+  { href: "/compounds", label: "Compounds" },
+  { href: "/blog", label: "Guides" },
   {
     href: "/2026-federal-ban",
     label: "2026 Ban",

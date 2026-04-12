@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllStates } from "@/data/states";
 import { COMPOUND_SLUGS } from "@/types/hemp";
+import { getAllBlogPosts } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const states = getAllStates();
@@ -32,6 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const blogPosts = getAllBlogPosts();
+  const blogUrls = blogPosts.map((p) => ({
+    url: `https://www.ishemplegal.com/blog/${p.slug}`,
+    lastModified: new Date(p.updatedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     {
       url: "https://www.ishemplegal.com",
@@ -48,8 +57,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.95,
     },
+    {
+      url: "https://www.ishemplegal.com/compounds",
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.ishemplegal.com/blog",
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
     ...stateUrls,
     ...compoundUrls,
+    ...blogUrls,
     ...comparePairs,
   ];
 }

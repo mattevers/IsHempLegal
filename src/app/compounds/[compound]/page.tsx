@@ -108,13 +108,66 @@ export default async function CompoundPage({
     (s) => s.compounds[compoundKey].status === "medical_only"
   );
 
+  // FAQ schema for SEO
+  const faqItems = [
+    {
+      question: `Is ${label} legal in the United States?`,
+      answer: desc
+        ? desc.federal
+        : `${label} legality varies by state. Use our tool to check your state.`,
+    },
+    {
+      question: `How many states have legalized ${label}?`,
+      answer: `As of 2026, ${label} is fully legal in ${legal.length} states, restricted in ${restricted.length} states, in a gray area in ${gray.length} states, and banned in ${banned.length} states.`,
+    },
+    {
+      question: `Will ${label} be legal after the 2026 federal ban?`,
+      answer:
+        compoundKey === "cbd"
+          ? "Yes. CBD products with less than 0.3% total THC remain legal under the 2026 law."
+          : compoundKey === "delta9Hemp"
+            ? "Hemp-derived Delta-9 THC products that stay under 0.3% total THC by dry weight may still qualify as legal hemp under the 2026 law."
+            : `The 2026 federal hemp law reclassifies ${label} under the total THC calculation. Starting November 12, 2026, ${label} products will be federally classified as controlled substances.`,
+    },
+    {
+      question: `What is ${label}?`,
+      answer: desc
+        ? desc.what
+        : `${label} is a hemp-derived cannabinoid. Check our guide for details.`,
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <div className="text-gray-500 text-sm mb-2">
         <a href="/" className="hover:text-gray-400">
           Home
         </a>{" "}
-        &rarr; Compounds &rarr; {label}
+        &rarr;{" "}
+        <a href="/compounds" className="hover:text-gray-400">
+          Compounds
+        </a>{" "}
+        &rarr; {label}
       </div>
       <h1 className="text-3xl md:text-4xl font-black text-white mb-4">
         Is {label} Legal?

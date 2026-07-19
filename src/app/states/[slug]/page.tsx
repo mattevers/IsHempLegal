@@ -10,6 +10,7 @@ import {
   PRODUCT_LABELS,
   Compound,
   ProductType,
+  formatAgeRestriction,
 } from "@/types/hemp";
 
 export async function generateStaticParams() {
@@ -74,7 +75,10 @@ export default async function StatePage({
         name: `What is the age limit for hemp products in ${state.name}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `The minimum age to purchase hemp products in ${state.name} is ${state.ageRestriction}.`,
+          text:
+            state.ageRestriction === null
+              ? `${state.name} has no statutory minimum age specific to hemp products; retailers commonly require 21+.`
+              : `The minimum age to purchase hemp products in ${state.name} is ${state.ageRestriction}.`,
         },
       },
       {
@@ -244,7 +248,7 @@ export default async function StatePage({
             Age Requirement
           </p>
           <p className="text-white font-bold text-2xl">
-            {state.ageRestriction}+
+            {formatAgeRestriction(state.ageRestriction)}
           </p>
         </div>
         <div className="rounded-xl border border-brand-border bg-brand-card p-4">

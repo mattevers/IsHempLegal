@@ -18,12 +18,16 @@ export interface StateData {
   lastUpdated: string;
   compounds: Record<Compound, CompoundStatus>;
   productTypes: Record<ProductType, LegalStatus>;
-  ageRestriction: number;
+  ageRestriction: number | null;
   shippingIn: LegalStatus;
   shippingOut: LegalStatus;
   federalChangeImpact: 'high' | 'medium' | 'low';
   federalChangeNote: string;
   notes?: string;
+}
+
+export function formatAgeRestriction(age: number | null): string {
+  return age === null ? "No statutory limit" : `${age}+`;
 }
 
 export const COMPOUND_LABELS: Record<Compound, string> = {

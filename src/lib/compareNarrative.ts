@@ -126,8 +126,10 @@ export function generateCompareNarrative(s1: StateData, s2: StateData): string {
 
   // Age comparison
   if (s1.ageRestriction !== s2.ageRestriction) {
+    const a = (s: typeof s1) =>
+      s.ageRestriction === null ? "no statutory age minimum" : `${s.ageRestriction}+`;
     parts.push(
-      `Age requirements differ: ${s1.name} requires ${s1.ageRestriction}+ while ${s2.name} requires ${s2.ageRestriction}+.`
+      `Age requirements differ: ${s1.name} has ${a(s1)} while ${s2.name} has ${a(s2)}.`
     );
   }
 

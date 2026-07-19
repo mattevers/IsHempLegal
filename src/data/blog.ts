@@ -17,7 +17,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "Delta-8 THC legality varies wildly by state. This guide covers where Delta-8 is legal, restricted, or banned — and what changes in November 2026.",
     publishedAt: "2026-04-10",
-    updatedAt: "2026-04-10",
+    updatedAt: "2026-07-18",
     category: "guides",
     tags: ["delta-8", "legality", "state-laws"],
     relatedSlugs: [
@@ -45,8 +45,14 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Use our <a href="/compounds/delta-8">Delta-8 legality tool</a> to check the exact status in your state.</p>
 
 <h2>The 2026 Federal Ban Changes Everything</h2>
-<p>On November 12, 2025, Congress signed the <strong>Hemp Product Safety and Regulation Act</strong>. This law fundamentally changes how hemp is defined at the federal level. The key change: the definition now uses <strong>total THC</strong> instead of just Delta-9 THC.</p>
-<p>Starting <strong>November 12, 2026</strong>, hemp must contain less than 0.3% total THC — that includes Delta-8, Delta-9, THCA, Delta-10, HHC, and all other THC isomers combined. This effectively makes Delta-8 a federally controlled substance.</p>
+<p>On November 12, 2025, Congress enacted <strong>Section 781 of the Continuing Appropriations and Extensions Act, 2026</strong> (H.R. 5371, Pub. L. 119-37). This law fundamentally changes how hemp is defined at the federal level, and it takes effect <strong>November 12, 2026</strong>.</p>
+<p>The law closes the hemp loophole through three mechanisms:</p>
+<ul>
+<li><strong>Total-THC definition:</strong> hemp is now capped at less than 0.3% <em>total</em> THC by dry weight — including THCA — instead of Delta-9 alone.</li>
+<li><strong>0.4 mg per-container cap:</strong> a finished consumer product may contain no more than <strong>0.4 mg of total THC per container</strong>.</li>
+<li><strong>Synthesized-cannabinoid exclusion:</strong> cannabinoids <strong>synthesized or manufactured outside the plant</strong> are excluded from the definition of hemp entirely.</li>
+</ul>
+<p>That third mechanism is what specifically ends Delta-8. Because almost all commercial Delta-8 is chemically converted from CBD rather than extracted from the plant, it falls under the synthesized-cannabinoid exclusion — so it becomes a federally controlled substance regardless of how the total-THC math works out.</p>
 <p>What this means in practice:</p>
 <ul>
 <li>Delta-8 gummies, vapes, and tinctures will be federally illegal</li>
@@ -59,7 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>What Should Consumers Do?</h2>
 <p>If you currently use Delta-8 products, here's what to consider:</p>
 <p><strong>Before November 2026:</strong> Check your state's current laws using our <a href="/">legality checker</a>. If Delta-8 is legal in your state, you can still purchase and use it. Buy from reputable, lab-tested brands.</p>
-<p><strong>After November 2026:</strong> Delta-8 will be federally banned. If you're in a state with legal recreational cannabis, look into whether your state's dispensaries will carry regulated Delta-8 products. If not, consider switching to legal alternatives like CBD isolate or broad-spectrum CBD products.</p>
+<p><strong>After November 2026:</strong> Delta-8 will be federally banned. If you're in a state with legal recreational cannabis, look into whether your state's dispensaries will carry regulated Delta-8 products. If not, consider switching to THC-free alternatives like CBD isolate or verified zero-THC CBD products, which stay clearly legal under the new cap.</p>
 <p><strong>Don't stockpile:</strong> The new law does not include a possession grace period. After the ban takes effect, possessing Delta-8 products could technically be a federal offense.</p>
 
 <h2>Why States Differ on Delta-8</h2>
@@ -78,7 +84,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "THCA flower is essentially marijuana sold as hemp. Learn how the THCA loophole works, why it's controversial, and how the 2026 federal law closes it for good.",
     publishedAt: "2026-04-10",
-    updatedAt: "2026-04-10",
+    updatedAt: "2026-07-18",
     category: "education",
     tags: ["thca", "loophole", "2026-ban"],
     relatedSlugs: [
@@ -112,7 +118,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Check the <a href="/compounds/thca">THCA legality map</a> to see exactly where your state stands.</p>
 
 <h2>The 2026 Federal Fix</h2>
-<p>The Hemp Product Safety and Regulation Act of 2025 specifically targets the THCA loophole. The new law redefines hemp using <strong>total THC</strong> — meaning THCA is now counted in the 0.3% threshold. A hemp flower with 20% THCA would far exceed the legal limit and be classified as a controlled substance.</p>
+<p><strong>Section 781 of the Continuing Appropriations and Extensions Act, 2026</strong> (H.R. 5371, Pub. L. 119-37) specifically targets the THCA loophole. The new law redefines hemp using <strong>total THC</strong> — meaning THCA is now counted in the 0.3% threshold. A hemp flower with 20% THCA would far exceed the legal limit and be classified as a controlled substance. The same law adds a <strong>0.4 mg total-THC-per-container cap</strong> on finished consumer products, which independently rules out concentrated THCA extracts and infused edibles.</p>
 <p>This change takes effect <strong>November 12, 2026</strong>. After that date:</p>
 <ul>
 <li>THCA flower and pre-rolls become federally illegal</li>
@@ -122,7 +128,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>What Happens Next</h2>
-<p>For consumers, the THCA market represents a brief window. If you're in a state where THCA is currently legal, it's worth understanding that this access will likely end in November 2026 regardless of state law, since federal law takes precedence for controlled substance classification.</p>
+<p>For consumers, the THCA market represents a brief window. If you're in a state where THCA is currently legal, it's worth understanding that this access is likely to narrow after November 2026: once these products are federally controlled, national brands and shipping-based sellers have strong incentives to stop carrying them, even in states that haven't passed their own restrictions. How aggressively the change is enforced against individual consumers remains unclear.</p>
 <p>For the broader cannabis industry, closing the THCA loophole is seen as a necessary step toward coherent regulation. The loophole undermined state cannabis programs, created consumer safety concerns (unregulated products with no mandatory testing), and made a mockery of the legal distinction between hemp and marijuana.</p>
 <p>See our <a href="/2026-federal-ban">2026 federal ban page</a> for the complete timeline and state-by-state impact analysis.</p>
 `,
@@ -133,7 +139,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "CBD and Delta-8 THC are both derived from hemp but have very different effects, legal status, and futures under the 2026 law. Here's what you need to know.",
     publishedAt: "2026-04-10",
-    updatedAt: "2026-04-10",
+    updatedAt: "2026-07-18",
     category: "education",
     tags: ["cbd", "delta-8", "comparison"],
     relatedSlugs: [
@@ -151,9 +157,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Legal Status: Now vs. 2026</h2>
 
-<h3>CBD — Safe and staying legal</h3>
-<p>CBD is legal in all 50 states at the federal level, provided the product contains less than 0.3% THC. The 2026 law doesn't change this — it actually reinforces CBD's legal status. Pure CBD isolate and broad-spectrum CBD products are completely unaffected by the upcoming changes.</p>
-<p>Full-spectrum CBD products (which contain trace amounts of THC) will need to comply with the new <strong>total THC</strong> calculation, but most reputable brands already meet this threshold. If you currently use CBD, you have nothing to worry about.</p>
+<h3>CBD — only THC-free products are clearly safe</h3>
+<p>The picture for CBD is more nuanced than "all CBD stays legal." Section 781 of the Continuing Appropriations and Extensions Act, 2026 (H.R. 5371) adds a <strong>0.4 mg total-THC-per-container cap</strong> on finished hemp products, and that cap — not the old 0.3% dry-weight rule — is what decides which CBD products survive.</p>
+<p><strong>Clearly safe:</strong> THC-free CBD isolate and verified zero-THC broad-spectrum products contain no measurable THC, so they remain legal.</p>
+<p><strong>Threatened:</strong> Full-spectrum CBD — and many broad-spectrum products — carry detectable THC well above 0.4 mg per container. Under the new cap, most of those products are <strong>not</strong> compliant after November 12, 2026, even though they were legal under the old 0.3%-Delta-9 rule. If you rely on full-spectrum CBD, check the total-THC content per container on the certificate of analysis and plan to switch to a THC-free product if it exceeds the cap.</p>
 <p>Check <a href="/compounds/cbd">CBD legality by state</a> for any state-specific restrictions.</p>
 
 <h3>Delta-8 — Legal now, banned in November</h3>
@@ -189,20 +196,20 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Delta-8 products tend to be slightly more expensive than equivalent CBD products, but both are significantly cheaper than dispensary cannabis. A month's supply of CBD gummies typically runs $30-60, while Delta-8 gummies are $40-80 for comparable quantities.</p>
 
 <h2>Which Should You Choose?</h2>
-<p><strong>Choose CBD if:</strong> You want wellness benefits without any intoxication. You get drug tested. You want a product that will remain legal long-term. You're new to cannabinoids and want to start mild.</p>
+<p><strong>Choose CBD if:</strong> You want wellness benefits without any intoxication. You get drug tested. You want a product that can remain legal long-term — meaning THC-free isolate or verified zero-THC CBD. You're new to cannabinoids and want to start mild.</p>
 <p><strong>Choose Delta-8 if:</strong> You want a mild high. You're in a state where marijuana isn't available. You understand this is a temporary option before the 2026 ban. You're comfortable with the regulatory uncertainty.</p>
 
 <h2>The Bottom Line</h2>
-<p>CBD is the long-term, stable choice. It's legal, it's staying legal, and it has a growing body of research behind it. Delta-8 offers something CBD can't — an actual high — but its days are numbered. If you currently use Delta-8, now is the time to explore whether CBD meets your needs, because after November 2026, Delta-8 won't be a legal option.</p>
+<p>THC-free CBD — isolate and verified zero-THC products — is the long-term, stable choice. It stays legal under the new law and has a growing body of research behind it. (Full-spectrum CBD is a different story: the 0.4 mg per-container cap makes most full-spectrum products non-compliant after November 2026, so read the certificate of analysis before you rely on one.) Delta-8 offers something CBD can't — an actual high — but its days are numbered. If you currently use Delta-8, now is the time to explore whether a THC-free CBD product meets your needs, because after November 2026, Delta-8 won't be a legal option.</p>
 `,
   },
   {
     slug: "hemp-derived-delta-9",
-    title: "Hemp-Derived Delta-9 THC: The Legal THC Loophole That Survives 2026",
+    title: "Hemp-Derived Delta-9 THC: What the 2026 Federal Cap Means",
     description:
-      "Hemp-derived Delta-9 THC edibles are legal in most states and may survive the 2026 ban. Learn how the dry-weight loophole works and which products qualify.",
+      "Hemp-derived Delta-9 THC edibles were legal under the 2018 Farm Bill's dry-weight rule — but the 2026 federal law's 0.4 mg per-container cap makes almost all of them controlled substances on November 12, 2026. Here's what changes.",
     publishedAt: "2026-04-10",
-    updatedAt: "2026-04-10",
+    updatedAt: "2026-07-18",
     category: "education",
     tags: ["delta-9", "hemp", "loophole", "edibles"],
     relatedSlugs: [
@@ -211,7 +218,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "2026-hemp-ban-consumers",
     ],
     content: `
-<p>Here's something that surprises most people: you can buy gummies containing real Delta-9 THC — the same compound that makes marijuana illegal — <strong>legally</strong>, without a dispensary or medical card, in the majority of US states. And unlike Delta-8 or THCA, this loophole may actually survive the 2026 federal ban.</p>
+<p>Here's something that surprises most people: for years you could buy gummies containing real Delta-9 THC — the same compound that makes marijuana illegal — <strong>legally</strong>, without a dispensary or medical card, in the majority of US states. That window is closing. Despite what many older guides still claim, hemp-derived Delta-9 edibles do <strong>not</strong> survive the 2026 federal law — a new per-container cap makes almost all of them controlled substances on November 12, 2026.</p>
 
 <h2>How Is This Possible?</h2>
 <p>The 2018 Farm Bill legalized hemp containing less than 0.3% Delta-9 THC <strong>by dry weight</strong>. The key phrase is "by dry weight." This creates a mathematical loophole for edible products.</p>
@@ -219,15 +226,20 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The math: 5,000mg (gummy weight) × 0.003 (0.3%) = 15mg Delta-9 THC.</p>
 <p>A heavier product — like a chocolate bar or a beverage — can contain even more. A 100ml hemp-derived THC drink can legally contain up to 300mg of Delta-9 THC and still be classified as hemp.</p>
 
-<h2>Is This Actually Legal?</h2>
-<p>At the federal level, yes — as long as the product meets the 0.3% by dry weight threshold and is derived from hemp. The <strong>total THC</strong> calculation in the 2026 law adds complexity, but hemp-derived Delta-9 edibles that stay under 0.3% total THC (which includes Delta-8, THCA, etc.) can still qualify.</p>
-<p>The key difference from Delta-8: hemp-derived Delta-9 products contain actual Delta-9 THC, which the law has always acknowledged. The products just use the dry-weight math to stay under the legal threshold.</p>
-<p>State laws vary. Check the <a href="/compounds/delta-9">Delta-9 (hemp) legality map</a> for your state's specific rules.</p>
+<h2>Was This Actually Legal?</h2>
+<p>Under the 2018 Farm Bill, yes — as long as the product met the 0.3% Delta-9-by-dry-weight threshold and was derived from hemp. The dry-weight percentage was the <em>only</em> test that mattered, which is why a heavy gummy could legally carry a full 15 mg dose.</p>
+<p>That is exactly what the 2026 law changes. Section 781 of the Continuing Appropriations and Extensions Act, 2026 (H.R. 5371, Pub. L. 119-37) no longer relies on the dry-weight percentage alone. It adds a hard <strong>0.4 mg total-THC-per-container cap</strong> on finished consumer products — a limit expressed in milligrams, not percentage, precisely so the dry-weight math can no longer be used to load a product with a full dose of THC.</p>
+<p>State laws also vary. Check the <a href="/compounds/delta-9">Delta-9 (hemp) legality map</a> for your state's specific rules.</p>
 
-<h2>Does This Survive the 2026 Ban?</h2>
-<p>Potentially, yes — with an important caveat. The 2026 law changes the threshold from Delta-9 only to <strong>total THC</strong>. A product that contains 15mg of Delta-9 THC and nothing else would need to stay under 0.3% total THC by dry weight. If the only THC present is Delta-9, the math works the same way.</p>
-<p>Products that combine Delta-9 with other cannabinoids like Delta-8 or THCA would need to account for all of them in the total THC calculation, which could push them over the limit.</p>
-<p>The practical result: <strong>pure hemp-derived Delta-9 edibles may be the last legal THC product standing</strong> in states without recreational marijuana.</p>
+<h2>Does This Survive the 2026 Law? No.</h2>
+<p>This is where most older guides get it wrong. The 0.4 mg per-container cap is brutal for edibles, because it is measured in milligrams of THC per container rather than as a percentage of product weight. Run the numbers:</p>
+<ul>
+<li>A typical 5 mg Delta-9 gummy is <strong>12.5&times;</strong> over the 0.4 mg limit.</li>
+<li>A 10 mg gummy is <strong>25&times;</strong> over.</li>
+<li>A 15 mg gummy is <strong>37.5&times;</strong> over.</li>
+</ul>
+<p>It no longer matters how heavy the gummy is — the dry-weight trick is irrelevant to a per-container cap. Any finished product that delivers a real dose of THC (roughly 5&ndash;15 mg is the industry standard) blows past 0.4 mg per container by 12 to 37 times. On <strong>November 12, 2026</strong>, those products become federally controlled substances.</p>
+<p>The practical result: <strong>hemp-derived Delta-9 edibles do not survive the new law.</strong> The only finished hemp products that clearly stay legal are those at or under 0.4 mg of total THC per container — far too little to produce any noticeable effect.</p>
 
 <h2>What Products Are Available?</h2>
 <ul>
@@ -260,7 +272,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "Confused about the 2026 hemp law? This guide explains what's changing, what products are affected, and what you can still buy after November 2026 — in plain English.",
     publishedAt: "2026-04-10",
-    updatedAt: "2026-04-10",
+    updatedAt: "2026-07-18",
     category: "guides",
     tags: ["2026-ban", "consumers", "federal-law"],
     relatedSlugs: [
@@ -276,30 +288,37 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>What Changed?</h2>
 <p>Under the old law (the 2018 Farm Bill), hemp was legal if it contained less than 0.3% Delta-9 THC. That specific wording — "Delta-9" — left a loophole. Other forms of THC (Delta-8, THCA, HHC, Delta-10) weren't mentioned, so companies sold them legally.</p>
-<p>The new law (signed November 2025, takes effect November 2026) changes one critical word: it now says <strong>total THC</strong>. That means Delta-8, THCA, HHC, Delta-10, THCP, and every other form of THC all count toward the 0.3% limit.</p>
+<p>The new law — Section 781 of the Continuing Appropriations and Extensions Act, 2026 (H.R. 5371, Pub. L. 119-37), signed November 12, 2025 and effective November 12, 2026 — closes the gap three ways:</p>
+<ul>
+<li><strong>Total THC:</strong> the 0.3% dry-weight limit now counts <em>all</em> THC, including THCA — so Delta-8, THCA, HHC, Delta-10, and THCP all count toward it.</li>
+<li><strong>A 0.4 mg per-container cap:</strong> a finished product may contain no more than 0.4 mg of total THC per container — the rule that ends hemp Delta-9 edibles and most full-spectrum CBD.</li>
+<li><strong>A synthesized-cannabinoid exclusion:</strong> cannabinoids made outside the plant (like CBD-converted Delta-8) are excluded from the definition of hemp entirely.</li>
+</ul>
 
 <h2>What Products Are Banned?</h2>
 <p>After November 12, 2026, these products become federally illegal:</p>
 <ul>
-<li><strong>Delta-8 THC:</strong> Gummies, vapes, tinctures, flower — all of it</li>
+<li><strong>Delta-8 THC:</strong> Gummies, vapes, tinctures, flower — all of it (Delta-8 is synthesized from CBD, which the law now excludes from hemp entirely)</li>
 <li><strong>THCA flower:</strong> The "legal marijuana" loophole is closed</li>
 <li><strong>HHC:</strong> All HHC products</li>
 <li><strong>Delta-10 THC:</strong> All Delta-10 products</li>
 <li><strong>THCP:</strong> All THCP products</li>
-<li><strong>Any hemp product</strong> with more than 0.3% total THC</li>
+<li><strong>Hemp-derived Delta-9 edibles and beverages:</strong> A typical 5&ndash;15 mg gummy or drink runs 12&ndash;37&times; over the new 0.4 mg total-THC-per-container cap</li>
+<li><strong>Full-spectrum CBD (and many broad-spectrum products)</strong> that carry more than 0.4 mg of total THC per container</li>
+<li><strong>Any hemp product</strong> over 0.3% total THC, or over 0.4 mg total THC per container</li>
 </ul>
 
 <h2>What Products Are Still Legal?</h2>
 <p>Not everything is going away. These remain legal:</p>
 <ul>
-<li><strong>CBD isolate products</strong> — 0% THC, completely unaffected</li>
-<li><strong>Broad-spectrum CBD</strong> — THC removed, still legal</li>
-<li><strong>Full-spectrum CBD</strong> — as long as total THC stays under 0.3%</li>
-<li><strong>Hemp-derived Delta-9 edibles</strong> — if they stay under 0.3% total THC by dry weight, they may still qualify (the math still works for heavy edibles)</li>
+<li><strong>CBD isolate products</strong> — 0% THC, unaffected</li>
+<li><strong>Verified zero-THC broad-spectrum CBD</strong> — if the THC is genuinely removed (0 mg per container), still legal</li>
 <li><strong>Hemp seed oil</strong> — food products, no cannabinoids</li>
-<li><strong>Hemp topicals</strong> — CBD creams, balms, etc.</li>
+<li><strong>Hemp topicals</strong> — non-intoxicating CBD creams and balms under the cap</li>
 <li><strong>Industrial hemp</strong> — fiber, textiles, building materials</li>
+<li><strong>Any finished hemp product at or under 0.4 mg of total THC per container</strong></li>
 </ul>
+<p>Note what is <em>not</em> on this list: full-spectrum CBD and hemp-derived Delta-9 edibles. Both typically carry far more than 0.4 mg of total THC per container, so most versions of those products do not survive the new cap.</p>
 
 <h2>Your Questions, Answered</h2>
 
@@ -310,7 +329,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Federal law sets the floor. States can be more restrictive (and many already are), but they can't legalize a federally controlled substance. However, states with legal recreational cannabis may choose to regulate hemp-derived products through their cannabis programs — essentially moving Delta-8 into the dispensary system.</p>
 
 <h3>Will prices go up for legal products?</h3>
-<p>CBD products shouldn't see price changes. Hemp-derived Delta-9 edibles might see increased demand (and potentially higher prices) if they become the only legal THC option outside of state cannabis programs.</p>
+<p>THC-free CBD products shouldn't see major price changes. Because hemp-derived Delta-9 edibles are swept up by the new 0.4 mg per-container cap, they won't be a legal alternative after November 12, 2026 — outside of state-legal cannabis programs, there won't be a legal hemp THC option for demand to shift to.</p>
 
 <h3>What if I order online before the ban?</h3>
 <p>Products ordered and received before November 12, 2026 were legal at the time of purchase. After that date, the products themselves become illegal regardless of when you bought them.</p>
@@ -322,14 +341,14 @@ export const BLOG_POSTS: BlogPost[] = [
 <ol>
 <li><strong>Check your state's laws</strong> — Use our <a href="/">legality checker</a> to see exactly where things stand in your state right now</li>
 <li><strong>Don't panic-buy</strong> — Stockpiling products that will become illegal isn't a great strategy</li>
-<li><strong>Explore CBD</strong> — If you use hemp products for wellness rather than the high, CBD is a safe long-term option</li>
+<li><strong>Explore THC-free CBD</strong> — If you use hemp products for wellness rather than the high, THC-free CBD isolate or verified zero-THC products are a safe long-term option (full-spectrum CBD over the 0.4 mg cap is not)</li>
 <li><strong>Watch your state legislature</strong> — Some states are already moving to create regulated pathways for these products through their cannabis programs</li>
-<li><strong>Stay informed</strong> — The DEA's final enforcement rules come out in August 2026, which will clarify a lot of open questions</li>
+<li><strong>Stay informed</strong> — As of mid-2026 there is no DEA or USDA rulemaking, enforcement guidance, or public comment period. The FDA also missed its February 10, 2026 statutory deadline to publish its lists of permitted and prohibited cannabinoids. Bills to delay or replace the ban have been introduced but not enacted, and the House passed its 2026 Farm Bill without moving the effective date — so watch for changes, but plan around November 12, 2026 as the date stands.</li>
 </ol>
 
 <h2>The Bigger Picture</h2>
 <p>The 2018-2026 era of unregulated hemp-derived THC was always going to end. The loopholes were too large, the products too unregulated, and the consumer safety concerns too real. The new law isn't perfect — many argue it's too restrictive — but it does bring clarity to a market that's been operating in a legal gray area for years.</p>
-<p>The hemp industry isn't dying. CBD is a $5+ billion market that's fully compliant with the new law. And state cannabis programs continue to expand. What's ending is the specific window where you could buy THC products with no regulation, no testing requirements, and no age verification.</p>
+<p>The hemp industry isn't dying. The THC-free part of the CBD market — isolate and verified zero-THC products — remains a multibillion-dollar business that stays compliant with the new law, and state cannabis programs continue to expand. What's ending is the specific window where you could buy THC products with no regulation, no testing requirements, and no age verification — and, with it, the full-spectrum and hemp Delta-9 products that relied on the old loopholes.</p>
 <p>For a detailed state-by-state breakdown of how the 2026 law affects your area, visit our <a href="/2026-federal-ban">2026 federal ban page</a>.</p>
 `,
   },

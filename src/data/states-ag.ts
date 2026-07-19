@@ -76,7 +76,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'restricted',
     federalChangeImpact: 'high',
     federalChangeNote:
-      'Section 781 of H.R. 5371 (the Continuing Appropriations and Extensions Act, 2026, Pub. L. 119-37), signed Nov 12, 2025 and effective Nov 12, 2026, imposes a 0.4 mg total-THC-per-container cap that sits far below Alabama\'s HB 445 limit of 10 mg per serving. The enacted federal cap eliminates the edible, tincture, and beverage products HB 445 preserved, leaving Alabama\'s licensed hemp-dispensary channel with almost no compliant inventory.',
+      'Section 781 of H.R. 5371 (the Continuing Appropriations and Extensions Act, 2026, Pub. L. 119-37), signed November 12, 2025 and effective November 12, 2026, imposes a 0.4 mg total-THC-per-container cap that sits far below Alabama\'s HB 445 limit of 10 mg per serving. The enacted federal cap eliminates the edible, tincture, and beverage products HB 445 preserved, leaving Alabama\'s licensed hemp-dispensary channel with almost no compliant inventory.',
     notes:
       'HB 445 Phase 2 (effective Jan 1, 2026) restricts consumable hemp to ABC-licensed hemp dispensaries, caps products at 10 mg total THC per serving and 40 mg per container for adults 21+, and bans smokable flower, pre-rolls, and vapes. Grocery and convenience stores may sell hemp beverages only. Online and direct-to-consumer shipments into Alabama are prohibited. Mellow Fellow v. Ivey saw a TRO denied June 30, 2025 and enforcement raids are ongoing.',
   },
@@ -155,7 +155,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'banned',
     federalChangeImpact: 'low',
     federalChangeNote:
-      'Alaska already bans hemp-derived intoxicants through its cannabis regulatory framework, a position a federal court upheld on May 29, 2025. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, adds a national 0.4 mg total-THC-per-container cap but changes little in practice because Alaska\'s existing prohibition already keeps these products out of general retail.',
+      'Alaska already bans hemp-derived intoxicants through its cannabis regulatory framework, a position a federal court upheld on May 29, 2025. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, adds a national 0.4 mg total-THC-per-container cap but changes little in practice because Alaska\'s existing prohibition already keeps these products out of general retail.',
     notes:
       'Alaska regulates all THC products through its licensed cannabis system (AMCO). Only non-intoxicating hemp products like CBD topicals and isolates are available outside licensed retailers.',
   },
@@ -235,7 +235,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'restricted',
     federalChangeImpact: 'high',
     federalChangeNote:
-      'Arizona\'s intoxicating-hemp market now rests on AG Opinion I24-005 and pending litigation rather than clear statutory protection. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, layers a federal 0.4 mg total-THC-per-container cap on top of state enforcement, removing the remaining retail path for Delta-8, Delta-9, and similar products and pushing any surviving market toward the licensed cannabis system.',
+      'Arizona\'s intoxicating-hemp market now rests on AG Opinion I24-005 and pending litigation rather than clear statutory protection. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, layers a federal 0.4 mg total-THC-per-container cap on top of state enforcement, removing the remaining retail path for Delta-8, Delta-9, and similar products and pushing any surviving market toward the licensed cannabis system.',
     notes:
       'Attorney General Opinion I24-005 (2024) declared hemp-synthesized intoxicants Schedule I; the enforcement position was extended to hemp Delta-9 edibles on March 24, 2025 and enforcement began April 24, 2025. A HITA preliminary injunction was denied June 25, 2025 (appeal pending), and the fix bill SB 1702 died. Products remain on some shelves, but treating them as fully "legal" is indefensible.',
   },
@@ -315,7 +315,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'banned',
     federalChangeImpact: 'high',
     federalChangeNote:
-      'Arkansas already prohibits intoxicating hemp-derived cannabinoids under Act 629 (2023) and Act 934 (2025), enforced statewide since the Eighth Circuit\'s June 24, 2025 ruling. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, adds a federal 0.4 mg total-THC-per-container cap that reinforces the existing state ban and forecloses any low-dose Delta-9 channel that remains contested under state law.',
+      'Arkansas already prohibits intoxicating hemp-derived cannabinoids under Act 629 (2023) and Act 934 (2025), enforced statewide since the Eighth Circuit\'s June 24, 2025 ruling. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, adds a federal 0.4 mg total-THC-per-container cap that reinforces the existing state ban and forecloses any low-dose Delta-9 channel that remains contested under state law.',
     notes:
       'Act 629 (2023, SB 358) banned Delta-8, Delta-10, and other converted intoxicating hemp cannabinoids as Schedule VI substances; Act 934 (2025) added a total-THC basis and placed enforcement with the Arkansas Tobacco Control Board. The Eighth Circuit vacated the injunction on June 24, 2025 (Bio Gen v. Sanders), and thousands of products have been seized since. Non-intoxicating CBD remains legal.',
   },
@@ -397,7 +397,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'banned',
     federalChangeImpact: 'low',
     federalChangeNote:
-      'California\'s AB 8 (2025) and the CDPH emergency regulations already bar detectable-THC hemp products from retail, allowing only high-purity THC-free isolate. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, adds a national 0.4 mg total-THC-per-container cap that aligns with California\'s stricter no-detectable-THC standard, so the federal change adds little beyond what state law already imposes.',
+      'California\'s AB 8 (2025) and the CDPH emergency regulations already bar detectable-THC hemp products from retail, allowing only high-purity THC-free isolate. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, adds a national 0.4 mg total-THC-per-container cap that aligns with California\'s stricter no-detectable-THC standard, so the federal change adds little beyond what state law already imposes.',
     notes:
       'AB 8 (signed Oct 2, 2025, effective Jan 1, 2026) made the September 2024 CDPH emergency regulations permanent: hemp foods, beverages, and inhalables may contain no detectable THC, and all hemp flower, pre-rolls, and inhalables are banned from retail. Only >99% pure THC-free isolate products qualify. Integration into the licensed cannabis market is not expected until roughly Jan 1, 2028. Non-intoxicating CBD topicals remain legal.',
   },
@@ -480,7 +480,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'banned',
     federalChangeImpact: 'low',
     federalChangeNote:
-      'Colorado routes intoxicating hemp cannabinoids through its licensed cannabis system while permitting a narrow low-dose channel (no more than 1.75 mg per serving). Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, sets a federal 0.4 mg total-THC-per-container cap that is tighter than Colorado\'s low-dose allowance and will compress that general-retail channel, though the state\'s core dispensary framework is largely unaffected.',
+      'Colorado routes intoxicating hemp cannabinoids through its licensed cannabis system while permitting a narrow low-dose channel (no more than 1.75 mg per serving). Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, sets a federal 0.4 mg total-THC-per-container cap that is tighter than Colorado\'s low-dose allowance and will compress that general-retail channel, though the state\'s core dispensary framework is largely unaffected.',
     notes:
       'SB 22-205, SB 23-271, C.R.S. § 25-5-427, and 6 CCR 1010-24 govern hemp cannabinoids. Chemically modified cannabinoids (Delta-8, HHC, Delta-10) are banned in retail hemp products, but a low-dose channel of up to 1.75 mg total THC per serving permits some edibles, tinctures, and hemp beverages (the latter in liquor stores). SB 26-164, which would have raised the beverage limit to 10 mg, was pulled in April 2026. Non-intoxicating CBD remains legal.',
   },
@@ -562,7 +562,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'restricted',
     federalChangeImpact: 'low',
     federalChangeNote:
-      'Connecticut channels most intoxicating hemp THC through its cannabis program while allowing a moderate-THC vendor channel (0.5 to 5 mg per container) and package-store beverages. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, imposes a federal 0.4 mg total-THC-per-container cap below Connecticut\'s 0.5 to 5 mg range, tightening the non-cannabis retail channel while the licensed program continues under state law.',
+      'Connecticut channels most intoxicating hemp THC through its cannabis program while allowing a moderate-THC vendor channel (0.5 to 5 mg per container) and package-store beverages. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, imposes a federal 0.4 mg total-THC-per-container cap below Connecticut\'s 0.5 to 5 mg range, tightening the non-cannabis retail channel while the licensed program continues under state law.',
     notes:
       'Connecticut integrates high-THC hemp products into its adult-use cannabis system (PA 21-1). PA 23-56, PA 24-76, and PA 25-101 opened a moderate-THC channel: since Jan 1, 2025, DCP-registered non-cannabis vendors may sell products of 0.5 to 5 mg per container, and hemp-derived THC beverages are sold through package stores. Non-intoxicating CBD and topicals remain broadly available.',
   },
@@ -641,7 +641,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'banned',
     federalChangeImpact: 'low',
     federalChangeNote:
-      'Delaware already bans intoxicating hemp-derived THC outside its medical cannabis program. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, adds a national 0.4 mg total-THC-per-container cap with little practical effect on Delaware\'s already-restrictive market. A pending beverage bill (HB 373) awaiting the governor\'s signature could open a narrow low-dose channel, but any such products must still reconcile with the federal per-container cap.',
+      'Delaware already bans intoxicating hemp-derived THC outside its medical cannabis program. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, adds a national 0.4 mg total-THC-per-container cap with little practical effect on Delaware\'s already-restrictive market. A pending beverage bill (HB 373) awaiting the governor\'s signature could open a narrow low-dose channel, but any such products must still reconcile with the federal per-container cap.',
     notes:
       'Delaware takes a strict approach to hemp-derived cannabinoids. Only non-intoxicating CBD products are permitted outside the medical cannabis program; Delta-8 and all synthetic cannabinoids are explicitly banned. HB 373, a bill regulating THC-infused beverages (no more than 10 mg per container, sold through package stores, 21+), passed both chambers in early July 2026 and is pending governor signature as of July 18, 2026; beverages remain banned until it is signed.',
   },
@@ -721,7 +721,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'legal',
     federalChangeImpact: 'high',
     federalChangeNote:
-      'Florida hosts one of the largest hemp-derived cannabinoid markets in the country, operating under FSA § 581.217 as amended by SB 1676 (2023) and FDACS Rule 5K-4.034. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, imposes a federal 0.4 mg total-THC-per-container cap far below the doses in Florida\'s edibles and beverages, threatening a large share of the state\'s retail industry.',
+      'Florida hosts one of the largest hemp-derived cannabinoid markets in the country, operating under FSA § 581.217 as amended by SB 1676 (2023) and FDACS Rule 5K-4.034. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, imposes a federal 0.4 mg total-THC-per-container cap far below the doses in Florida\'s edibles and beverages, threatening a large share of the state\'s retail industry.',
     notes:
       'Florida regulates hemp under FSA § 581.217 (amended by SB 1676, 2023) and FDACS rules; a 2024 hemp-regulation bill was vetoed on June 7, 2024. FDACS Rule 5K-4.034 enforces a total Delta-9 standard (Delta-9 + 0.877 x THCA) as of June 16, 2025, restricting high-THCA products. Bills to ban Delta-8 (SB 438 in 2025, SB 1270 in 2026) failed, so Delta-8 remains legal.',
   },
@@ -801,7 +801,7 @@ export const statesAG: Record<string, StateData> = {
     shippingOut: 'restricted',
     federalChangeImpact: 'high',
     federalChangeNote:
-      'Georgia\'s hemp market now operates under SB 494 (2024) and SB 33 (2026), which impose a total-THC standard, ban retail hemp flower, and cap servings. Section 781 of H.R. 5371 (Pub. L. 119-37), effective Nov 12, 2026, adds a federal 0.4 mg total-THC-per-container cap far below Georgia\'s 300 mg-per-container limit, removing most licensed hemp products from shelves in a state with no adult-use cannabis alternative.',
+      'Georgia\'s hemp market now operates under SB 494 (2024) and SB 33 (2026), which impose a total-THC standard, ban retail hemp flower, and cap servings. Section 781 of H.R. 5371 (Pub. L. 119-37), effective November 12, 2026, adds a federal 0.4 mg total-THC-per-container cap far below Georgia\'s 300 mg-per-container limit, removing most licensed hemp products from shelves in a state with no adult-use cannabis alternative.',
     notes:
       'SB 494 (2024, effective Oct 1, 2024) imposes a total-THC standard, bans retail hemp flower and pre-rolls (OCGA § 2-23-4), limits sales to licensed retailers for buyers 21+, and caps products at 10 mg per serving and 300 mg per container, with hemp beverages limited to 10 mg per 12 oz. SB 33 (2026, effective May 11, 2026) targets synthesized cannabinoids such as HHC with a phase-out toward 2027. Georgia has no licensed adult-use cannabis system.',
   },

@@ -37,6 +37,7 @@ export default function BlogIndexPage() {
                   year: "numeric",
                   month: "long",
                   day: "numeric",
+                  timeZone: "UTC",
                 })}
               </span>
             </div>

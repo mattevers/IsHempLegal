@@ -1,6 +1,9 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getBlogPost, getAllBlogPosts } from "@/data/blog";
+import { getAffiliateCTA } from "@/data/affiliates";
+import { AffiliateCTA } from "@/components/AffiliateCTA";
+import { blogCompound, splitHtmlForCta } from "@/lib/blogCta";
 
 export async function generateStaticParams() {
   return getAllBlogPosts().map((p) => ({ slug: p.slug }));
@@ -97,10 +100,36 @@ export default async function BlogPostPage({
       </div>
 
       {/* Content */}
-      <article
-        className="prose-custom text-gray-300 leading-relaxed space-y-4 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-3 [&_h3]:text-lg [&_h3]:font-bold [&_h3]:text-white [&_h3]:mt-6 [&_h3]:mb-2 [&_p]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:list-inside [&_ul]:mb-4 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:list-inside [&_ol]:mb-4 [&_a]:text-green-400 [&_a]:underline hover:[&_a]:text-green-300 [&_strong]:text-white [&_table]:w-full [&_table]:my-4 [&_table]:text-sm [&_th]:text-left [&_th]:text-gray-400 [&_th]:font-medium [&_th]:px-3 [&_th]:py-2 [&_th]:border-b [&_th]:border-brand-border [&_td]:px-3 [&_td]:py-2 [&_td]:border-b [&_td]:border-brand-border/50"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+      {(() => {
+        const c = blogCompound(post.slug);
+        const split = splitHtmlForCta(post.content);
+        const midCta =
+          c && getAffiliateCTA({ compoundKey: c.key, compoundLabel: c.label, placement: `blog-${post.slug}-mid` });
+        const endCta =
+          c && getAffiliateCTA({ compoundKey: c.key, compoundLabel: c.label, placement: `blog-${post.slug}-end` });
+        const cls =
+          "prose-custom text-gray-300 leading-relaxed space-y-4 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-3 [&_h3]:text-lg [&_h3]:font-bold [&_h3]:text-white [&_h3]:mt-6 [&_h3]:mb-2 [&_p]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:list-inside [&_ul]:mb-4 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:list-inside [&_ol]:mb-4 [&_a]:text-green-400 [&_a]:underline hover:[&_a]:text-green-300 [&_strong]:text-white [&_table]:w-full [&_table]:my-4 [&_table]:text-sm [&_th]:text-left [&_th]:text-gray-400 [&_th]:font-medium [&_th]:px-3 [&_th]:py-2 [&_th]:border-b [&_th]:border-brand-border [&_td]:px-3 [&_td]:py-2 [&_td]:border-b [&_td]:border-brand-border/50";
+        return (
+          <>
+            {split && midCta ? (
+              <>
+                <article className={cls} dangerouslySetInnerHTML={{ __html: split.before }} />
+                <div className="my-8">
+                  <AffiliateCTA data={midCta} variant="inline" />
+                </div>
+                <article className={cls} dangerouslySetInnerHTML={{ __html: split.after }} />
+              </>
+            ) : (
+              <article className={cls} dangerouslySetInnerHTML={{ __html: post.content }} />
+            )}
+            {endCta && (
+              <div className="mt-8">
+                <AffiliateCTA data={endCta} variant="card" />
+              </div>
+            )}
+          </>
+        );
+      })()}
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (

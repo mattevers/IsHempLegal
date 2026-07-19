@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getAllStates } from "@/data/states";
 import { StatusBadge } from "@/components/StatusBadge";
+import { getAffiliateCTA } from "@/data/affiliates";
+import { AffiliateCTA } from "@/components/AffiliateCTA";
 
 export const metadata: Metadata = {
   title:
@@ -206,6 +208,19 @@ export default function FederalBanPage() {
           </div>
         </div>
       </section>
+
+      {(() => {
+        const cta = getAffiliateCTA({
+          compoundKey: "cbd",
+          compoundLabel: "CBD that stays legal after Nov 12",
+          placement: "federal-ban",
+        });
+        return cta ? (
+          <section className="mb-12">
+            <AffiliateCTA data={cta} variant="card" />
+          </section>
+        ) : null;
+      })()}
 
       {/* Timeline */}
       <section className="mb-12">

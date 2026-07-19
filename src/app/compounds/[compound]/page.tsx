@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getAllStates } from "@/data/states";
 import { StatusBadge } from "@/components/StatusBadge";
-import { ExternalLink } from "lucide-react";
-import { getAffiliatesForCompound } from "@/data/affiliates";
+import { getAffiliateCTA } from "@/data/affiliates";
+import { AffiliateCTA } from "@/components/AffiliateCTA";
 import {
   COMPOUND_SLUGS,
   COMPOUND_SLUG_LABELS,
@@ -89,7 +89,6 @@ export default async function CompoundPage({
   if (!compoundKey || !label) notFound();
 
   const desc = COMPOUND_DESCRIPTIONS[compoundSlug];
-  const affiliates = getAffiliatesForCompound(compoundKey);
   const states = getAllStates();
 
   const legal = states.filter(
@@ -199,37 +198,18 @@ export default async function CompoundPage({
       )}
 
       {/* Shop CTA */}
-      {affiliates.length > 0 && (
-        <section className="mb-10">
-          <div className="rounded-2xl border border-green-800/40 bg-green-900/20 p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <p className="text-green-400 font-bold text-lg">
-                Shop {label} Online
-              </p>
-              <p className="text-green-300/70 text-sm mt-1">
-                Verified, third-party lab tested brands that ship nationwide.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {affiliates.map((a) => (
-                <a
-                  key={a.name}
-                  href={a.url}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-green-600 hover:bg-green-500 text-white font-semibold text-sm px-5 py-2.5 transition-colors"
-                >
-                  {a.name}
-                  <ExternalLink size={14} />
-                </a>
-              ))}
-            </div>
-          </div>
-          <p className="text-gray-600 text-xs mt-2">
-            We may earn a commission when you purchase through our links.
-          </p>
-        </section>
-      )}
+      {(() => {
+        const cta = getAffiliateCTA({
+          compoundKey,
+          compoundLabel: label,
+          placement: `compound-${compoundSlug}`,
+        });
+        return cta ? (
+          <section className="mb-10">
+            <AffiliateCTA data={cta} variant="card" />
+          </section>
+        ) : null;
+      })()}
 
       {/* State Lists */}
       <section className="mb-10 space-y-6">

@@ -59,10 +59,10 @@ export const statesHM: Record<string, StateData> = {
         statute: 'HRS ch. 328G; HAR 11-37',
       },
       thcp: {
-        status: 'gray',
+        status: 'banned',
         label: 'THCP',
         detail:
-          'THCP\'s status is uncertain in Hawaii; the Department of Health\'s prohibition on artificially derived cannabinoids reaches many novel compounds, and high-potency THCP products face a hostile regulatory posture.',
+          'THCP is banned in Hawaii. It is expressly listed among the artificially derived cannabinoids prohibited under Department of Health rules (HRS ch. 328G; HAR 11-37).',
       },
     },
     productTypes: {
@@ -452,10 +452,10 @@ export const statesHM: Record<string, StateData> = {
           'HHC is not specifically addressed in Kansas law. It occupies a legal gray area due to lack of explicit regulation.',
       },
       delta10: {
-        status: 'legal',
+        status: 'gray',
         label: 'Delta-10 THC',
         detail:
-          'Delta-10 THC is not specifically restricted under Kansas hemp law and is available for sale.',
+          'Delta-10 THC is contested in Kansas. It is a CBD-converted isomer analytically identical in relevant respects to delta-8, so Attorney General Opinion 2021-14\'s total-THC standard applies equally: delta-10 is a Schedule I controlled substance unless it contains no more than 0.3% total THC — a bar most delta-10 products fail.',
       },
       thco: {
         status: 'banned',
@@ -861,10 +861,10 @@ export const statesHM: Record<string, StateData> = {
           'THC-O is a synthetically derived cannabinoid considered illegal at the federal level. It is not permitted for sale in Massachusetts.',
       },
       thcp: {
-        status: 'gray',
+        status: 'banned',
         label: 'THCP',
         detail:
-          'THCP has no specific mention in Massachusetts law; its retail status is uncertain, though state guidance broadly targets intoxicating hemp products.',
+          'THCP is banned from retail in Massachusetts. As an intoxicating THC homolog, it falls within the May 2024 DPH/MDAR/ABCC guidance barring intoxicating hemp-derived products from sale, consistent with the treatment of delta-8, delta-9, THCA, HHC, and delta-10.',
       },
     },
     productTypes: {

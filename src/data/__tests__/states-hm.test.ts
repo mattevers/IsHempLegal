@@ -47,6 +47,7 @@ describe("states-hm corrections (audit 2026-07-18)", () => {
     expect(hi.compounds.delta9Hemp.status).toBe("restricted");
     expect(hi.compounds.delta9Hemp.detail).toMatch(/1 mg total THC per serving/);
     expect(hi.compounds.delta9Hemp.detail).toMatch(/5 mg per container/);
+    expect(hi.compounds.thcp.status).toBe("banned"); // consistency: notes list THCP among banned artificial cannabinoids
     expect(hi.productTypes.vapes).toBe("banned");
     expect(hi.productTypes.flower).toBe("banned");
     expect(hi.productTypes.gummies).toBe("restricted");
@@ -121,6 +122,7 @@ describe("states-hm corrections (audit 2026-07-18)", () => {
     const ks = s("kansas");
     expect(ks.compounds.delta8.status).toBe("gray");
     expect(ks.compounds.thca.status).toBe("gray");
+    expect(ks.compounds.delta10.status).toBe("gray"); // consistency: converted isomer under AG Opinion 2021-14, same as delta-8
     expect(ks.productTypes.flower).toBe("banned");
     expect(ks.productTypes.vapes).toBe("banned");
     expect(ks.ageRestriction).toBe(null);
@@ -190,6 +192,7 @@ describe("states-hm corrections (audit 2026-07-18)", () => {
     expect(ma.compounds.thca.status).toBe("banned");
     expect(ma.compounds.hhc.status).toBe("banned");
     expect(ma.compounds.delta10.status).toBe("banned");
+    expect(ma.compounds.thcp.status).toBe("banned"); // consistency: intoxicating THC homolog covered by the category ban
     expect(ma.productTypes.gummies).toBe("banned"); // policy: match compound bans
     expect(ma.productTypes.vapes).toBe("banned");
     expect(ma.productTypes.flower).toBe("banned");

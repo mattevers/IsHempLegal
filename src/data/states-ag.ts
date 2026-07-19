@@ -308,7 +308,7 @@ export const statesAG: Record<string, StateData> = {
       flower: 'banned',
       tinctures: 'banned',
       topicals: 'legal',
-      beverages: 'legal',
+      beverages: 'banned',
     },
     ageRestriction: 21,
     shippingIn: 'banned',
@@ -378,10 +378,10 @@ export const statesAG: Record<string, StateData> = {
           'THC-O is considered a synthetic cannabinoid and is federally illegal per DEA guidance. Also prohibited under California cannabis regulations.',
       },
       thcp: {
-        status: 'gray',
+        status: 'banned',
         label: 'THCP',
         detail:
-          'No specific legislation addresses THCP. Would likely be subject to AB 45 if marketed as a THC product.',
+          'THCP is banned from retail. As an intoxicating THC homolog, it falls under AB 8\'s no-detectable-THC standard, which superseded AB 45 and prohibits any hemp product with detectable THC, including THCP.',
       },
     },
     productTypes: {
@@ -789,10 +789,10 @@ export const statesAG: Record<string, StateData> = {
       },
     },
     productTypes: {
-      gummies: 'legal',
-      vapes: 'legal',
+      gummies: 'restricted',
+      vapes: 'restricted',
       flower: 'banned',
-      tinctures: 'legal',
+      tinctures: 'restricted',
       topicals: 'legal',
       beverages: 'restricted',
     },

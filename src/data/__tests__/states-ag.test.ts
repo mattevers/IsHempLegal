@@ -88,6 +88,7 @@ describe("states-ag corrections (audit 2026-07-18)", () => {
     expect(ar.productTypes.vapes).toBe("banned");
     expect(ar.productTypes.flower).toBe("banned");
     expect(ar.productTypes.tinctures).toBe("banned");
+    expect(ar.productTypes.beverages).toBe("banned");
     expect(ar.shippingIn).toBe("banned");
     expect(ar.shippingOut).toBe("banned");
   });
@@ -100,6 +101,8 @@ describe("states-ag corrections (audit 2026-07-18)", () => {
     expect(ca.compounds.thca.status).toBe("banned");
     expect(ca.compounds.hhc.status).toBe("banned");
     expect(ca.compounds.delta10.status).toBe("banned");
+    expect(ca.compounds.thcp.status).toBe("banned");
+    expect(ca.compounds.thcp.detail).not.toMatch(/would\b|likely\b/i);
     expect(ca.productTypes.flower).toBe("banned");
     expect(ca.productTypes.gummies).toBe("banned");
     expect(ca.productTypes.vapes).toBe("banned");
@@ -164,6 +167,10 @@ describe("states-ag corrections (audit 2026-07-18)", () => {
     expect(ga.compounds.hhc.status).toBe("gray");
     expect(ga.productTypes.flower).toBe("banned");
     expect(ga.productTypes.beverages).toBe("restricted");
+    expect(ga.productTypes.gummies).toBe("restricted");
+    expect(ga.productTypes.vapes).toBe("restricted");
+    expect(ga.productTypes.tinctures).toBe("restricted");
+    expect(ga.productTypes.topicals).toBe("legal");
     expect(ga.shippingIn).toBe("restricted");
     expect(ga.shippingOut).toBe("restricted");
     expect(ga.compounds.delta8.statute).toMatch(/SB 494/);

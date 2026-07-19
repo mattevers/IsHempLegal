@@ -26,7 +26,7 @@ const COMPOUND_DESCRIPTIONS: Record<string, { what: string; federal: string }> =
     cbd: {
       what: "CBD (cannabidiol) is a non-psychoactive cannabinoid found abundantly in hemp. It's the largest segment of the hemp market, used in oils, gummies, topicals, and beverages. CBD does not produce a high and has been widely studied for potential wellness benefits.",
       federal:
-        "Non-intoxicating CBD stays federally legal, but the 2026 law's 0.4 mg total-THC-per-container cap changes what qualifies. Most full-spectrum — and many broad-spectrum — CBD products carry detectable THC above that cap and become non-compliant on November 12, 2026. Only THC-free CBD isolate and verified zero-THC products remain clearly legal.",
+        "THC-free CBD stays federally legal, but the 2026 law's 0.4 mg total-THC-per-container cap changes what qualifies. Most full-spectrum — and many broad-spectrum — CBD products carry detectable THC above that cap and become non-compliant on November 12, 2026. Only THC-free CBD isolate and verified zero-THC products remain clearly legal.",
     },
     thca: {
       what: "THCA (tetrahydrocannabinolic acid) is the raw, non-psychoactive precursor to THC found in cannabis and hemp flower. When heated — by smoking, vaping, or cooking — THCA converts to Delta-9 THC. This 'THCA loophole' allowed retailers to sell what is essentially marijuana as hemp, since THCA was not counted in the 0.3% THC limit.",
@@ -127,7 +127,9 @@ export default async function CompoundPage({
           ? "Only THC-free CBD — isolate and verified zero-THC products — clearly stays legal. The 2026 law's 0.4 mg total-THC-per-container cap makes most full-spectrum and many broad-spectrum CBD products non-compliant starting November 12, 2026."
           : compoundKey === "delta9Hemp"
             ? "No. The 2026 law caps finished products at 0.4 mg of total THC per container, and hemp Delta-9 edibles and beverages (usually 5–15 mg per serving) far exceed it — so they become federally controlled substances on November 12, 2026."
-            : `The 2026 federal hemp law removes ${label} from the definition of legal hemp. Starting November 12, 2026, ${label} products will be federally classified as controlled substances.`,
+            : compoundKey === "thco"
+              ? "No — but not because of the 2026 law. THC-O is a synthetically produced cannabinoid that's already federally illegal as a Schedule I controlled substance under DEA guidance; it was never legal, and the 2026 law does not change its status."
+              : `The 2026 federal hemp law removes ${label} from the definition of legal hemp. Starting November 12, 2026, ${label} products will be federally classified as controlled substances.`,
     },
     {
       question: `What is ${label}?`,

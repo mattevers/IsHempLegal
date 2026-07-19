@@ -1214,21 +1214,21 @@ export const statesHM: Record<string, StateData> = {
     name: 'Montana',
     abbreviation: 'MT',
     slug: 'montana',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-07-18',
     compounds: {
       delta8: {
-        status: 'restricted',
+        status: 'banned',
         label: 'Delta-8 THC',
         detail:
-          'Delta-8 THC is restricted in Montana. SB 546 regulates hemp-derived intoxicating cannabinoids, requiring compliance with state standards for testing, labeling, and sales restrictions.',
-        statute: 'SB 546',
+          'Delta-8 THC is banned in Montana. HB 948 (2023) prohibits synthetic and chemically converted cannabinoids — including delta-8 — even within the licensed cannabis market, and no compliant retail channel exists for it.',
+        statute: 'HB 948 (2023)',
       },
       delta9Hemp: {
         status: 'restricted',
         label: 'Delta-9 THC (Hemp)',
         detail:
-          'Hemp-derived delta-9 THC products are restricted in Montana under SB 546. Products must comply with the state\'s regulatory framework for intoxicating hemp-derived cannabinoids.',
-        statute: 'SB 546',
+          'Hemp-derived delta-9 THC is tightly restricted in Montana. SB 375 (2025) bars the retail sale of hemp products with any detectable THC outside licensed dispensaries, and HB 49 (2025) caps compliant finished products at 0.5 mg total THC per serving and 2 mg per package.',
+        statute: 'SB 375 (2025); HB 49 (2025)',
       },
       cbd: {
         status: 'legal',
@@ -1238,54 +1238,56 @@ export const statesHM: Record<string, StateData> = {
         statute: 'Montana Hemp Economic Development Act (MCA 80-18-101 et seq.)',
       },
       thca: {
-        status: 'restricted',
+        status: 'banned',
         label: 'THCA',
         detail:
-          'THCA from hemp is restricted under SB 546 as an intoxicating hemp-derived cannabinoid subject to state regulation.',
-        statute: 'SB 546',
+          'THCA is banned at general retail in Montana. Under SB 375 (2025) the state measures total THC (which counts THCA), so high-THCA hemp flower and products are treated as marijuana and cannot be sold outside licensed dispensaries.',
+        statute: 'SB 375 (2025)',
       },
       hhc: {
-        status: 'restricted',
+        status: 'banned',
         label: 'HHC',
         detail:
-          'HHC is restricted in Montana under SB 546\'s regulation of intoxicating hemp-derived cannabinoids.',
-        statute: 'SB 546',
+          'HHC is banned in Montana. HB 948 (2023) prohibits synthetic and chemically converted hemp cannabinoids, including HHC, even in the licensed market.',
+        statute: 'HB 948 (2023)',
       },
       delta10: {
-        status: 'restricted',
+        status: 'banned',
         label: 'Delta-10 THC',
         detail:
-          'Delta-10 THC is restricted in Montana under SB 546\'s regulatory framework for intoxicating hemp-derived cannabinoids.',
-        statute: 'SB 546',
+          'Delta-10 THC is banned in Montana as a chemically converted cannabinoid prohibited by HB 948 (2023).',
+        statute: 'HB 948 (2023)',
       },
       thco: {
         status: 'banned',
         label: 'THC-O',
         detail:
-          'THC-O is banned as a synthetically derived cannabinoid at the federal level. It is not permitted in Montana.',
+          'THC-O is banned in Montana. It is an artificially derived cannabinoid prohibited by HB 948 (2023) and is not protected under the federal Farm Bill.',
+        statute: 'HB 948 (2023)',
       },
       thcp: {
-        status: 'gray',
+        status: 'banned',
         label: 'THCP',
         detail:
-          'THCP has no specific legislation in Montana. Its legal status is undetermined, though SB 546 could potentially apply.',
+          'THCP is banned in Montana. As an artificially derived cannabinoid produced by chemical conversion, it falls under HB 948 (2023)\'s prohibition on synthetic and converted hemp cannabinoids alongside delta-8, delta-10, HHC, and THC-O.',
+        statute: 'HB 948 (2023)',
       },
     },
     productTypes: {
-      gummies: 'restricted',
-      vapes: 'restricted',
-      flower: 'restricted',
-      tinctures: 'legal',
+      gummies: 'banned',
+      vapes: 'banned',
+      flower: 'banned',
+      tinctures: 'banned',
       topicals: 'legal',
-      beverages: 'restricted',
+      beverages: 'banned',
     },
     ageRestriction: 21,
     shippingIn: 'restricted',
     shippingOut: 'restricted',
-    federalChangeImpact: 'medium',
+    federalChangeImpact: 'low',
     federalChangeNote:
-      'Montana has its own regulatory framework under SB 546 for intoxicating hemp-derived cannabinoids. Federal changes could reinforce or conflict with the state\'s existing approach.',
+      'Montana already prohibits converted hemp cannabinoids under HB 948 (2023) and caps compliant products at 0.5 mg per serving under HB 49 (2025) — limits stricter than the federal standard. Section 781 of H.R. 5371 (Continuing Appropriations and Extensions Act, 2026, Pub. L. 119-37), effective November 12, 2026, sets a 0.4 mg total-THC-per-container cap nationally, so its impact on Montana is low because the state is already more restrictive.',
     notes:
-      'Montana legalized adult-use cannabis in 2020 (I-190) and subsequently passed SB 546 to regulate hemp-derived intoxicating cannabinoids. The state requires testing, proper labeling, and sales restrictions for intoxicating hemp products. Non-intoxicating products like CBD remain broadly available.',
+      'Montana bans synthetic and chemically converted hemp cannabinoids (delta-8, delta-10, HHC, THC-O, THCP) under HB 948 (2023), even inside the licensed adult-use market it created in 2020 (I-190). SB 375 (2025) bars retail sale of any hemp product with detectable THC outside licensed dispensaries, and HB 49 (2025) caps compliant finished products at 0.5 mg total THC per serving and 2 mg per package — limits that took roughly 80–90% of intoxicating hemp gummies and drinks off Montana shelves. Only non-intoxicating CBD and topicals remain broadly available at general retail. Earlier versions of this entry cited a bill that never became law; the operative statutes are HB 948, SB 375, and HB 49.',
   },
 };

@@ -16,17 +16,17 @@ const COMPOUND_DESCRIPTIONS: Record<string, { what: string; federal: string }> =
     "delta-8": {
       what: "Delta-8 THC is a naturally occurring cannabinoid found in small amounts in hemp plants. It produces mild psychoactive effects — roughly half as potent as Delta-9 THC. Most commercial Delta-8 is synthesized from CBD through chemical conversion. It became widely popular after the 2018 Farm Bill created a legal gray area for hemp-derived cannabinoids.",
       federal:
-        "Currently legal under the 2018 Farm Bill if derived from hemp. The 2026 federal law will reclassify Delta-8 as a controlled substance by including it in the total THC calculation.",
+        "Currently sold in the 2018 Farm Bill's hemp gray area. Because nearly all commercial Delta-8 is synthesized from CBD, Section 781 of the 2026 law excludes it from the definition of hemp as a cannabinoid manufactured outside the plant — making it a federally controlled substance on November 12, 2026, regardless of the total-THC math.",
     },
     "delta-9": {
       what: "Delta-9 THC is the primary psychoactive compound in cannabis. Hemp-derived Delta-9 refers to products made from hemp that contain less than 0.3% Delta-9 THC by dry weight — which allows for significant amounts of THC per serving in edibles and beverages (a heavy gummy can contain 5-10mg while staying under 0.3% by total weight).",
       federal:
-        "Hemp-derived Delta-9 at or below 0.3% by dry weight remains legal under both the 2018 Farm Bill and the 2026 update, as long as total THC (including other cannabinoids) stays under 0.3%.",
+        "The 2026 law adds a cap of 0.4 mg of total THC per container on finished products. Hemp Delta-9 edibles and beverages typically carry 5–15 mg per serving — 12 to 37 times over the cap — so they lose hemp status and become federally controlled substances on November 12, 2026. Only trace products at or under 0.4 mg per container stay compliant.",
     },
     cbd: {
       what: "CBD (cannabidiol) is a non-psychoactive cannabinoid found abundantly in hemp. It's the largest segment of the hemp market, used in oils, gummies, topicals, and beverages. CBD does not produce a high and has been widely studied for potential wellness benefits.",
       federal:
-        "CBD remains federally legal under both the 2018 Farm Bill and the 2026 law, provided the product contains less than 0.3% total THC. Pure CBD isolate and broad-spectrum products are unaffected by the new law.",
+        "Non-intoxicating CBD stays federally legal, but the 2026 law's 0.4 mg total-THC-per-container cap changes what qualifies. Most full-spectrum — and many broad-spectrum — CBD products carry detectable THC above that cap and become non-compliant on November 12, 2026. Only THC-free CBD isolate and verified zero-THC products remain clearly legal.",
     },
     thca: {
       what: "THCA (tetrahydrocannabinolic acid) is the raw, non-psychoactive precursor to THC found in cannabis and hemp flower. When heated — by smoking, vaping, or cooking — THCA converts to Delta-9 THC. This 'THCA loophole' allowed retailers to sell what is essentially marijuana as hemp, since THCA was not counted in the 0.3% THC limit.",
@@ -36,12 +36,12 @@ const COMPOUND_DESCRIPTIONS: Record<string, { what: string; federal: string }> =
     hhc: {
       what: "HHC (hexahydrocannabinol) is a hydrogenated form of THC. It's created by adding hydrogen molecules to THC through a chemical process. HHC produces psychoactive effects similar to Delta-9 THC but is slightly less potent. It gained popularity as an alternative in states that banned Delta-8.",
       federal:
-        "HHC falls under the 2026 total THC calculation. As a THC isomer, it will be included in the controlled substance classification.",
+        "HHC is hydrogenated THC produced by a chemical process, not a naturally occurring THC isomer. Section 781 of the 2026 law excludes cannabinoids synthesized or manufactured outside the plant and reaches compounds with similar intoxicating effects — so HHC becomes a federally controlled substance on November 12, 2026.",
     },
     "delta-10": {
       what: "Delta-10 THC is a minor cannabinoid that produces mild psychoactive effects, generally considered less potent than Delta-8. Like Delta-8, most commercial Delta-10 is synthesized from CBD. It's less common in retail but growing in popularity.",
       federal:
-        "Delta-10 will be included in the total THC calculation under the 2026 law and classified as a controlled substance.",
+        "Like Delta-8, most commercial Delta-10 is synthesized from CBD. The 2026 law excludes cannabinoids manufactured outside the plant from the definition of hemp, so Delta-10 becomes a federally controlled substance on November 12, 2026 — through the synthesis exclusion rather than the total-THC math.",
     },
     "thc-o": {
       what: "THC-O (THC-O-acetate) is a synthetic cannabinoid created in a laboratory by acetylating THC. It does not occur naturally in the cannabis plant. THC-O is reportedly 2-3 times more potent than Delta-9 THC. The DEA issued a statement in February 2023 declaring THC-O a controlled substance because it is synthetically derived.",
@@ -51,7 +51,7 @@ const COMPOUND_DESCRIPTIONS: Record<string, { what: string; federal: string }> =
     thcp: {
       what: "THCP (tetrahydrocannabiphorol) is a naturally occurring cannabinoid discovered in 2019. It has a longer alkyl side chain than THC, making it potentially 30 times more potent at binding to CB1 receptors. THCP is found in very small amounts in cannabis plants and most commercial THCP is synthesized.",
       federal:
-        "THCP has no specific federal legislation yet. Under the 2026 law, it will be included in the total THC calculation and classified as a controlled substance.",
+        "THCP occurs only in trace amounts, so commercial THCP is almost always synthesized — and its extra-long side chain makes it exceptionally potent. Section 781 of the 2026 law excludes synthesized cannabinoids from the definition of hemp, making THCP a federally controlled substance on November 12, 2026.",
     },
   };
 
@@ -124,10 +124,10 @@ export default async function CompoundPage({
       question: `Will ${label} be legal after the 2026 federal ban?`,
       answer:
         compoundKey === "cbd"
-          ? "Yes. CBD products with less than 0.3% total THC remain legal under the 2026 law."
+          ? "Only THC-free CBD — isolate and verified zero-THC products — clearly stays legal. The 2026 law's 0.4 mg total-THC-per-container cap makes most full-spectrum and many broad-spectrum CBD products non-compliant starting November 12, 2026."
           : compoundKey === "delta9Hemp"
-            ? "Hemp-derived Delta-9 THC products that stay under 0.3% total THC by dry weight may still qualify as legal hemp under the 2026 law."
-            : `The 2026 federal hemp law reclassifies ${label} under the total THC calculation. Starting November 12, 2026, ${label} products will be federally classified as controlled substances.`,
+            ? "No. The 2026 law caps finished products at 0.4 mg of total THC per container, and hemp Delta-9 edibles and beverages (usually 5–15 mg per serving) far exceed it — so they become federally controlled substances on November 12, 2026."
+            : `The 2026 federal hemp law removes ${label} from the definition of legal hemp. Starting November 12, 2026, ${label} products will be federally classified as controlled substances.`,
     },
     {
       question: `What is ${label}?`,

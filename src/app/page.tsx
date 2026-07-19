@@ -56,9 +56,10 @@ export default function HomePage() {
                 Federal Hemp Law Changes November 12, 2026
               </h2>
               <p className="text-orange-300/80">
-                Congress redefined hemp to include THCA and Delta-8 as
-                controlled substances. Most intoxicating hemp products will be
-                federally banned. Laws vary by state.
+                Congress redefined hemp to exclude THCA, Delta-8, and other
+                intoxicating cannabinoids, making them federally controlled
+                substances as of November 12, 2026. Most intoxicating hemp
+                products will be federally banned. Laws vary by state.
               </p>
             </div>
             <a

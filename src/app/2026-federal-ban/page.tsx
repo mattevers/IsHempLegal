@@ -25,22 +25,22 @@ const faqItems = [
   {
     question: "What hemp products will be illegal after November 2026?",
     answer:
-      "Products containing Delta-8 THC, THCA, Delta-10 THC, HHC, THCP, and other intoxicating hemp-derived cannabinoids will be federally classified as controlled substances. CBD products with less than 0.3% total THC remain legal.",
+      "Products containing Delta-8 THC, THCA, Delta-10 THC, HHC, THCP, and other intoxicating hemp-derived cannabinoids will be federally classified as controlled substances — as will finished hemp Delta-9 edibles and beverages that exceed the new 0.4 mg total-THC-per-container cap. Only THC-free products, such as CBD isolate and verified zero-THC items, clearly remain legal.",
   },
   {
     question: "Is Delta-8 THC being banned federally?",
     answer:
-      "Yes. The new law specifically redefines hemp to exclude Delta-8 THC, effectively making it a Schedule I controlled substance at the federal level starting November 12, 2026.",
+      "Yes. Most commercial Delta-8 is synthesized from CBD, and Section 781 excludes cannabinoids synthesized or manufactured outside the plant from the definition of hemp. That makes Delta-8 a federally controlled substance starting November 12, 2026.",
   },
   {
     question: "Will CBD still be legal after the 2026 ban?",
     answer:
-      "Yes. CBD products that contain less than 0.3% total THC (including Delta-9, Delta-8, and THCA combined) will remain federally legal. Most pure CBD products are unaffected.",
+      "Only partly. THC-free CBD — isolate and verified zero-THC products — stays legal, along with topicals and non-cannabinoid hemp under the cap. But the new 0.4 mg total-THC-per-container limit makes most full-spectrum, and many broad-spectrum, CBD products non-compliant, because they carry detectable THC well above that cap.",
   },
   {
     question: "Can states still allow Delta-8 after the federal ban?",
     answer:
-      "Federal law sets the floor, not the ceiling. States with legal recreational cannabis may choose to regulate hemp-derived products through their existing cannabis frameworks, but they cannot override the federal controlled substance classification.",
+      "In practice, sometimes. Once these products are federally controlled, no state can make them federally legal — but state-legal markets may persist under state law, especially where hemp cannabinoids are folded into a regulated cannabis program. Businesses and consumers there still face federal enforcement risk.",
   },
   {
     question: "What about hemp products I already own?",
@@ -110,32 +110,60 @@ export default function FederalBanPage() {
         </h2>
         <div className="rounded-2xl border border-brand-border bg-brand-card p-6 space-y-4">
           <p className="text-gray-300 leading-relaxed">
-            On November 12, 2025, Congress signed into law the{" "}
+            On November 12, 2025, Congress enacted{" "}
             <strong className="text-white">
-              Hemp Product Safety and Regulation Act
+              Section 781 of the Continuing Appropriations and Extensions Act,
+              2026 (H.R. 5371, Pub. L. 119-37)
             </strong>
-            , fundamentally changing how hemp is defined at the federal level.
-            The key change: the definition of &ldquo;hemp&rdquo; now uses{" "}
-            <strong className="text-white">total THC</strong> instead of just
-            Delta-9 THC.
+            , which rewrites the federal definition of &ldquo;hemp&rdquo; first
+            set by the 2018 Farm Bill. The changes take effect one year later,
+            on <strong className="text-white">November 12, 2026</strong>.
           </p>
           <p className="text-gray-300 leading-relaxed">
             Under the previous 2018 Farm Bill, hemp was any cannabis plant with
             less than 0.3% Delta-9 THC by dry weight. This created a loophole
             that allowed Delta-8, THCA, HHC, and other intoxicating cannabinoids
             to be sold legally because they weren&apos;t specifically Delta-9
-            THC.
+            THC. Section 781 closes that loophole through{" "}
+            <strong className="text-white">three separate mechanisms</strong>:
           </p>
-          <p className="text-gray-300 leading-relaxed">
-            The new law closes that loophole. Starting{" "}
-            <strong className="text-white">November 12, 2026</strong>, hemp must
-            contain less than 0.3%{" "}
-            <strong className="text-white">
-              total THC — including Delta-8, Delta-9, THCA, Delta-10, HHC, and
-              all other THC isomers combined
-            </strong>
-            .
-          </p>
+          <ul className="space-y-3 text-gray-300 leading-relaxed list-none pl-0">
+            <li>
+              <strong className="text-white">
+                1. A total-THC definition.
+              </strong>{" "}
+              Hemp is now measured on{" "}
+              <strong className="text-white">
+                total THC — including THCA
+              </strong>{" "}
+              — capped at 0.3% by dry weight, rather than Delta-9 THC alone.
+              High-THCA hemp flower no longer qualifies as legal hemp.
+            </li>
+            <li>
+              <strong className="text-white">
+                2. A 0.4 mg total-THC-per-container cap.
+              </strong>{" "}
+              Finished consumer products — edibles, beverages, tinctures, vapes
+              — may contain no more than{" "}
+              <strong className="text-white">
+                0.4 mg of total THC per container
+              </strong>
+              . A typical hemp Delta-9 gummy or drink (5&ndash;15 mg) exceeds
+              this cap by roughly 12&ndash;37 times.
+            </li>
+            <li>
+              <strong className="text-white">
+                3. Exclusion of synthesized cannabinoids.
+              </strong>{" "}
+              Cannabinoids that are{" "}
+              <strong className="text-white">
+                synthesized or manufactured outside the plant
+              </strong>{" "}
+              — the CBD-to-Delta-8 and CBD-to-Delta-10 conversions behind most
+              intoxicating hemp products — are excluded from the definition of
+              hemp entirely, regardless of the THC math.
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -150,12 +178,15 @@ export default function FederalBanPage() {
               Will Be Federally Banned
             </h3>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Delta-8 THC gummies, vapes, tinctures</li>
+              <li>Delta-8 and Delta-10 THC gummies, vapes, tinctures</li>
               <li>THCA flower and pre-rolls</li>
-              <li>HHC products</li>
-              <li>Delta-10 THC products</li>
-              <li>THCP products</li>
-              <li>Any hemp product exceeding 0.3% total THC</li>
+              <li>HHC, THC-O, and THCP products</li>
+              <li>Hemp Delta-9 edibles &amp; beverages (5&ndash;15 mg per serving)</li>
+              <li>
+                Full-spectrum (and most broad-spectrum) CBD over 0.4 mg total
+                THC per container
+              </li>
+              <li>Any product with synthesized or converted cannabinoids</li>
             </ul>
           </div>
           <div className="rounded-2xl border border-green-900/40 bg-green-900/10 p-6">
@@ -163,14 +194,14 @@ export default function FederalBanPage() {
               Remains Federally Legal
             </h3>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>CBD isolate products (0% THC)</li>
-              <li>Broad-spectrum CBD (0% THC)</li>
+              <li>THC-free CBD isolate products</li>
+              <li>Broad-spectrum CBD verified at 0.0% THC</li>
               <li>
-                Full-spectrum CBD with &lt;0.3% total THC
+                Any finished product at or under 0.4 mg total THC per container
               </li>
               <li>Hemp seed oil and food products</li>
               <li>Hemp fiber and industrial products</li>
-              <li>Topical CBD creams and balms</li>
+              <li>Topical CBD creams and balms under the cap</li>
             </ul>
           </div>
         </div>
@@ -183,29 +214,38 @@ export default function FederalBanPage() {
           {[
             {
               date: "November 12, 2025",
-              event: "Law signed by the President",
-              done: true,
-            },
-            {
-              date: "January 2026",
-              event: "DEA begins drafting enforcement guidance",
-              done: true,
-            },
-            {
-              date: "April 2026",
-              event: "Public comment period on new regulations",
-              done: true,
-            },
-            {
-              date: "August 2026",
               event:
-                "Final enforcement rules published",
+                "Section 781 signed into law as part of H.R. 5371 (Pub. L. 119-37), starting a one-year clock",
+              done: true,
+            },
+            {
+              date: "February 10, 2026",
+              event:
+                "FDA's 90-day statutory deadline to publish its lists of permitted and prohibited cannabinoids passed — the lists were never published",
+              done: true,
+            },
+            {
+              date: "As of July 2026",
+              event:
+                "No DEA or USDA rulemaking, enforcement guidance, or formal opportunity for public comment has been issued",
+              done: true,
+            },
+            {
+              date: "2026",
+              event:
+                "The House passed its version of the 2026 Farm Bill without delaying the ban, leaving the effective date intact",
+              done: true,
+            },
+            {
+              date: "Pending",
+              event:
+                "Bills to delay or replace the ban have been introduced but not enacted — the Hemp Planting Predictability Act (H.R. 7024) would push the effective date to November 12, 2028, and the Wyden–Merkley Cannabinoid Safety and Regulation Act would build a permanent framework",
               done: false,
             },
             {
               date: "November 12, 2026",
               event:
-                "Full ban takes effect — all non-compliant products become controlled substances",
+                "Effective date — non-compliant hemp products become federally controlled substances",
               done: false,
             },
           ].map((item) => (

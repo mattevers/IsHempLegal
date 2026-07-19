@@ -48,8 +48,9 @@ export function getAffiliateCTA(opts: {
 
   const directOk = status === "legal" && shippingIn !== "banned";
   const noStateContext = !status && !stateName;
+  const sells = compoundKey ? getAffiliatesForCompound(compoundKey).length > 0 : true;
 
-  if (directOk || noStateContext) {
+  if (sells && (directOk || noStateContext)) {
     return {
       url, kind: "direct", disclosure: DISCLOSURE,
       headline: `Shop lab-tested ${label}${where}`,

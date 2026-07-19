@@ -41,4 +41,9 @@ describe("getAffiliateCTA", () => {
     expect(cta).not.toBeNull();
     expect(cta.kind).toBe("fallback");
   });
+  it("returns a fallback (not direct) cta for a valid unsold compound with NO state context (compound page path)", () => {
+    const cta = getAffiliateCTA({ compoundKey: "thco", compoundLabel: "THC-O", placement: "compound-thc-o" })!;
+    expect(cta).not.toBeNull();
+    expect(cta.kind).toBe("fallback");
+  });
 });
